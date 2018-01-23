@@ -52,4 +52,4 @@ Once all the dependencies are installed you'll be ready to run the tests.  Enter
 
 `npm run local-test`
 
-This repository uses [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) for deployment testing on Node.js versions 6.11x and 8.5x.
+This repository uses [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) for deployment testing on Node.js versions 8.9.x and 9.4.x.

@@ -55,4 +55,4 @@ Una vez instaladas todas las dependencias, estarás listo para ejecutar las prue
 
 `npm run local-test`
 
-Este repositorio usa [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) para las pruebas de despliegue en las versiones 6.11x y 8.5x de Node.js.
+Este repositorio usa [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) para las pruebas de despliegue en las versiones 8.9.x y 9.4.x de Node.js.
