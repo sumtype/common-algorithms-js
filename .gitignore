@@ -1,6 +1,6 @@
 .npmignore
 /.eslintrc
-**/node_modules/**
+node_modules/
 *.log
-**/coverage/**
+coverage/
 package-lock.json
