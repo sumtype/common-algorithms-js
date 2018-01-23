@@ -1,0 +1,58 @@
+# Algoritmos Comunes en JavaScript
+
+[![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![BCH compliance](https://bettercodehub.com/edge/badge/sumtype/common-algorithms-js?branch=master)](https://bettercodehub.com/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) de ensayo utilizado.
+
+### Colección
+
+- [Selección Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
+- [Ordenamiento de Burbuja](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
+- [Búsqueda Lineal](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/linearSearch.js)
+- [Combinar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
+- [Ordenación Rápida](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)
+- [Búsqueda Binaria](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/binarySearch.js)
+- [Ordenamiento por Inserción](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/insertionSort.js)
+- [Clasificación del Cucharón](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bucketSort.js)
+- [Clasificación de Shell](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
+- [Contar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/countingSort.js)
+- [Ordenar Gnomo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/gnomeSort.js)
+- [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
+
+### Cuerda
+
+- [Combinación de Cuerdas de Fuerza Bruta](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
+- [Más Largo Subcadena Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubstring.js)
+- [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
+- [Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
+- [Damerau-Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
+- [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensonDiceCoefficient.js)
+- [Knuth-Morris-Pratt Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
+- [Rabin-Karp Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
+- [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
+- [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
+
+### Grafico
+
+- [Profundidad Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/depthFirstSearch.js)
+- [Amplitud Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/breadthFirstSearch.js)
+
+## Pruebas
+
+Para ejecutar las pruebas usted mismo necesitará descargar el proyecto e instalar sus dependencias de módulo de nodo a través de [npm](https://www.npmjs.com/). Por lo tanto, si aún no ha instalado [Node.js](https://nodejs.org/) y npm para usarlo en su línea de comandos, vaya al sitio web de Node.js y siga sus instrucciones de descarga e instalación. Una vez instalado Node.js y npm, clone el proyecto en su computadora usando el siguiente comando en el terminal/el símbolo del sistema/la consola:
+
+`git clone https://github.com/sumtype/common-algorithms-js.git`
+
+(Solo en caso de que no haya instalado [Git](https://git-scm.com/), siga las instrucciones de instalación [aquí](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), luego vuelva a introducir el comando anterior una vez instalado). descargado el proyecto utilice el siguiente comando para navegar al directorio raíz del proyecto:
+
+`cd common-algorithms-js`
+
+A continuación, instale las dependencias del módulo de nodo del proyecto desde npm. Para ello, ingrese este comando:
+
+`npm install`
+
+Una vez instaladas todas las dependencias, estarás listo para ejecutar las pruebas. Escriba el siguiente comando para ejecutarlos:
+
+`npm run local-test`
+
+Este repositorio usa [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) para las pruebas de despliegue en las versiones 6.11x y 8.5x de Node.js.
