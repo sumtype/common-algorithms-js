@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![BCH compliance](https://bettercodehub.com/edge/badge/sumtype/common-algorithms-js?branch=master)](https://bettercodehub.com/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) testing.
-
+ 
 ### Array
 * [Selection Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
 * [Bubble Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
