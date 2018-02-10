@@ -14,9 +14,11 @@ There are a few steps to adding an algorithm to the repository.  Please remember
 
 4) Add your new algorithm to [README.md](https://github.com/sumtype/common-algorithms-js/blob/master/README.md) following the same conventions used to describe other algorithms.  If a new category of algorithms is necessary, add it following the same conventions as others.
 
-5) Update the README.md files inside subfolders in the [locales directory](https://github.com/sumtype/common-algorithms-js/tree/master/locales) to include your new algorithm (translated appropriately).  Otherwise create an issue that specifies locale translations for your new algorithm need to be added.
+5) **Optional** - Update the README.md files inside subfolders in the [locales directory](https://github.com/sumtype/common-algorithms-js/tree/master/locales) to include your new algorithm (translated appropriately).
 
-6) Create a pull request from your fork to the master branch following the [pull request template](https://github.com/sumtype/common-algorithms-js/blob/master/PULL_REQUEST_TEMPLATE.md) guidelines.
+6) If you didn't update the README.md files inside subfolders in the [locales directory](https://github.com/sumtype/common-algorithms-js/tree/master/locales), create an issue that specifies locale translations for your new algorithm need to be added.
+
+7) Create a pull request from your fork to the master branch following the [pull request template](https://github.com/sumtype/common-algorithms-js/blob/master/PULL_REQUEST_TEMPLATE.md) guidelines.
 
 ## Issues
 
