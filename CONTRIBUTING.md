@@ -30,4 +30,4 @@ Please format pull requests for fixes according to the [pull request template](h
 
 ## Translations
 
-To add a translation create a new directory following [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) naming conventions.  Inside the directory create a README.md file.  The README.md file should imitate the English [README.md](https://github.com/sumtype/common-algorithms-js/blob/master/README.md) file precisely in formatting and accurately in content in the translated language.
+To add a translation create a new directory following [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) naming conventions.  Inside the directory create a README.md file.  The README.md file should imitate the English [README.md](https://github.com/sumtype/common-algorithms-js/blob/master/README.md) file precisely in formatting and accurately in content in the translated language.  Once your translation is ready and/or you're done making changes to existing translations, create a pull request following the [pull request template](https://github.com/sumtype/common-algorithms-js/blob/master/PULL_REQUEST_TEMPLATE.md) to the master branch from your fork.
