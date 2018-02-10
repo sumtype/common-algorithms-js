@@ -7,6 +7,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 ### Array
 * [Selection Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
 * [Bubble Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
+* [Cocktail Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/cocktailSort.js)
 * [Linear Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/linearSearch.js)
 * [Merge Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
 * [Quick Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)

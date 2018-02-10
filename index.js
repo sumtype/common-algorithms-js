@@ -33,5 +33,6 @@ exports.damerauLevenshteinDistance = require(path.join(__dirname, 'algorithms', 
 exports.countingSort = require(path.join(__dirname, 'algorithms', 'countingSort'))
 exports.gnomeSort = require(path.join(__dirname, 'algorithms', 'gnomeSort'))
 exports.rayCasting = require(path.join(__dirname, 'algorithms', 'rayCasting'))
+exports.cocktailSort = require(path.join(__dirname, 'algorithms', 'cocktailSort'))
 
 module.exports = exports

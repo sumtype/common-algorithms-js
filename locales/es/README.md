@@ -8,6 +8,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 
 * [Selección Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
 * [Ordenamiento de Burbuja](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
+* [Ordenamiento de Cóctel](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/cocktailSort.js)
 * [Búsqueda Lineal](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/linearSearch.js)
 * [Combinar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
 * [Ordenación Rápida](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)
