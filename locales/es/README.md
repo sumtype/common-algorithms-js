@@ -44,6 +44,10 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 
 * [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
 
+### Número
+
+* [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
+
 ## Pruebas
 
 Para ejecutar las pruebas usted mismo necesitará descargar el proyecto e instalar sus dependencias de módulo de nodo a través de [npm](https://www.npmjs.com/). Por lo tanto, si aún no ha instalado [Node.js](https://nodejs.org/) y npm para usarlo en su línea de comandos, vaya al sitio web de Node.js y siga sus instrucciones de descarga e instalación. Una vez instalado Node.js y npm, clone el proyecto en su computadora usando el siguiente comando en el terminal/el símbolo del sistema/la consola:

@@ -40,6 +40,10 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 
 * [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
 
+### Number
+
+* [Sieve of Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
+
 ## Testing
 
 To run the tests yourself you'll need to download the project and install its node module dependencies via [npm](https://www.npmjs.com/).  So, if you haven't already installed [Node.js](https://nodejs.org/) and npm for use on your command line hop over to the Node.js website and follow their download and installation instructions.  Once you have Node.js and npm installed, clone the project onto your computer using the following command in your terminal/command prompt/console:
