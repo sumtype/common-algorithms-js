@@ -18,6 +18,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 * [Counting Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/countingSort.js)
 * [Gnome Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/gnomeSort.js)
 * [Durstenfeld Shuffle (a.k.a. Knuth Shuffle)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
+* [Sattolo Cycle](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sattoloCycle.js)
 
 ### String
 * [Brute Force String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)

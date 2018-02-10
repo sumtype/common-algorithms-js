@@ -25,7 +25,7 @@ module.exports = function (array) {
   return array
 }
 
-const swapIndicies = function (array, index, direction) {
+function swapIndicies(array, index, direction) {
   var temp = array[index]
   array[index] = array[index + direction]
   array[index + direction] = temp
