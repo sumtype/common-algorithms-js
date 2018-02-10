@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const knuthMorrisPrattStringMatch = require(path.join(__dirname, '..', 'algorithms', 'knuthMorrisPrattStringMatch.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const knuthMorrisPrattStringMatch = require(path.join(__dirname, '..', 'algorithms', 'knuthMorrisPrattStringMatch.js'))
+
+// Test
 describe('Knuth-Morris-Pratt String Match Algorithm: knuthMorrisPrattStringMatch(input, pattern)', () => {
   it('Should return the proper index value of the pattern in the input string when it exists in the input string.', () => {
     expect(knuthMorrisPrattStringMatch('test', 'est')).to.eql(1)

@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const sorensonDiceCoefficient = require(path.join(__dirname, '..', 'algorithms', 'sorensonDiceCoefficient.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const sorensonDiceCoefficient = require(path.join(__dirname, '..', 'algorithms', 'sorensonDiceCoefficient.js'))
+
+// Test
 describe('Sorenson-Dice Coefficient Algorithm: sorensonDiceCoefficient(input1, input2)', () => {
   it('Should return the Sorenson-Dice Coefficient between the input strings.', () => {
     expect(sorensonDiceCoefficient('test', '')).to.eql(0)

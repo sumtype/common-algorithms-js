@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const boyerMooreHorspoolStringMatch = require(path.join(__dirname, '..', 'algorithms', 'boyerMooreHorspoolStringMatch.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const boyerMooreHorspoolStringMatch = require(path.join(__dirname, '..', 'algorithms', 'boyerMooreHorspoolStringMatch.js'))
+
+// Test
 describe('Boyer-Moore-Horspool String Match Algorithm: boyerMooreHorspoolStringMatch(input, pattern, alphabetSize)', () => {
   it('Should return the proper index value of the pattern in the input string when it exists in the input string.', () => {
     expect(boyerMooreHorspoolStringMatch('test', 'test')).to.eql(0)

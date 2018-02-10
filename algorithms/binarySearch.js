@@ -1,6 +1,9 @@
 /*
   A JavaScript module which performs a binary search on an array of numbers ordered low to high.  If the specified value is found its index in the input array is returned.  If the specified value is not found -1 is returned.
 */
+
+'use strict'
+
 module.exports = exports = function (input, value) {
   var bottom, top, index
   bottom = 0

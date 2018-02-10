@@ -1,6 +1,9 @@
 /*
   A JavaScript module which performs a Durstenfeld shuffle on a given array.
 */
+
+'use strict'
+
 module.exports = exports = function (input) {
   var index = input.length
   while (index !== 0) {

@@ -2,6 +2,8 @@
   A JavaScript module which performs a Boyer-Moore-Horspool string match for a given string pattern inside an input string.  If the specified value is found, the index of the pattern string inside the input string is returned.  If the pattern is not found -1 is returned.
 */
 
+'use strict'
+
 var alphabetSize = 256
 
 module.exports = exports = function (input, pattern) {

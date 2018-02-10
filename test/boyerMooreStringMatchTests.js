@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const boyerMooreStringMatch = require(path.join(__dirname, '..', 'algorithms', 'boyerMooreStringMatch.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const boyerMooreStringMatch = require(path.join(__dirname, '..', 'algorithms', 'boyerMooreStringMatch.js'))
+
+// Test
 describe('Boyer-Moore String Match Algorithm: boyerMooreStringMatch(input, pattern)', () => {
   it('Should return the proper index value of the pattern in the input string when it exists in the input string.', () => {
     expect(boyerMooreStringMatch('test', 'test')).to.eql(0)

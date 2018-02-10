@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const rabinKarpStringMatch = require(path.join(__dirname, '..', 'algorithms', 'rabinKarpStringMatch.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const rabinKarpStringMatch = require(path.join(__dirname, '..', 'algorithms', 'rabinKarpStringMatch.js'))
+
+// Test
 describe('Rabin-Karp String Match Algorithm: rabinKarpStringMatch(input, pattern, check)', () => {
   it('Should return the proper index value of the pattern in the input string when it exists in the input string.', () => {
     expect(rabinKarpStringMatch('test', 'test', false)).to.eql(0)

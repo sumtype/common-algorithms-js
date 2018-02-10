@@ -2,6 +2,8 @@
   A JavaScript module which performs a breadth first search on a graph using the graph's adjacency matrix as input to determine whether or not the graph is connected.  If a connected graph's adjacency matrix is input, true is returned.  If a disconnected graph's adjacency matrix is input, false is returned.
 */
 
+'use strict'
+
 var queue, visited, connected
 
 module.exports = exports = function (input) {
@@ -16,6 +18,7 @@ module.exports = exports = function (input) {
   for (i = 0; i < visited.length; i++) if (!visited[i]) connected = false
   return connected
 }
+
 function breadthFirstSearch (value, input, f, r) {
   for (var i = 0; i < input.length; i++) if (input[value][i] && !visited[i]) queue[++r] = i
   if (f <= r) {

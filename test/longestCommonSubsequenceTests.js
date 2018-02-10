@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const longestCommonSubsequence = require(path.join(__dirname, '..', 'algorithms', 'longestCommonSubsequence.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const longestCommonSubsequence = require(path.join(__dirname, '..', 'algorithms', 'longestCommonSubsequence.js'))
+
+// Test
 describe('Longest Common Subsequence Algorithm: longestCommonSubsequence(input1, input2)', () => {
   it('Should return the Longest Common Subsequence in the input strings when there is at least one common character.', () => {
     expect(longestCommonSubsequence('test', 'es')).to.eql('es')

@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const damerauLevenshteinDistance = require(path.join(__dirname, '..', 'algorithms', 'damerauLevenshteinDistance.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const damerauLevenshteinDistance = require(path.join(__dirname, '..', 'algorithms', 'damerauLevenshteinDistance.js'))
+
+// Test
 describe('Damerau-Levenshtein Distance Algorithm: damerauLevenshteinDistance(input1, input2)', () => {
   it('Should return the Damerau-Levenshtein distance between the input strings.', () => {
     expect(damerauLevenshteinDistance('test', '')).to.eql(4)

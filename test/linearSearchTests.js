@@ -1,7 +1,17 @@
 /* eslint-env mocha */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
-const linearSearch = require(path.join(__dirname, '..', 'algorithms', 'linearSearch.js'))
+
+// NPM Modules
 const expect = require('chai').expect
+
+// Algorithm
+const linearSearch = require(path.join(__dirname, '..', 'algorithms', 'linearSearch.js'))
+
+// Test
 describe('Linear Search Algorithm: linearSearch(input, value)', () => {
   it('Should return the proper index value of a found element when the value exists inside an element of the input array.', () => {
     expect(linearSearch([10, 9], 9)).to.eql(1)

@@ -1,6 +1,9 @@
 /*
   A JavaScript module which performs a Rabin-Karp string match to determine whether a given value exists within an input string.  If the specified value is found, the index of the value string inside the input string is returned.  If the specified value is not found in the input string -1 is returned.  The third argument accepts a boolean value which determines whether or not a Las Vegas check is additionally performed on matching input section and pattern strings.  If that argument is false a Monte Carlo check is performed.
 */
+
+'use strict'
+
 module.exports = exports = function (input, pattern, check) {
   if (input.length < pattern.length) return -1
   var prime, radix, rm, patternHash, inputHash
@@ -19,11 +22,13 @@ module.exports = exports = function (input, pattern, check) {
   }
   return -1
 }
+
 function hashString (string, length, radix, prime) {
   var hash = 0
   for (var i = 0; i < length; i++) hash = parseInt(radix * hash + string.charCodeAt(i)) % prime
   return hash
 }
+
 function doubleCheck (input, pattern, index, check) {
   if (check) for (var i = 0; i < pattern.length; i++) if (pattern.charAt(i) !== input.charAt(i + index)) return false
   return true

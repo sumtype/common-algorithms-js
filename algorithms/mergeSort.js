@@ -1,6 +1,9 @@
 /*
   A JavaScript module which performs a merge sort on a given array of numbers, ordering the elements from lowest to highest.
 */
+
+'use strict'
+
 var index, lowIndex, midIndex, holder, input
 
 module.exports = exports = function (a) {

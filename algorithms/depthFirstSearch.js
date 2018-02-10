@@ -1,6 +1,9 @@
 /*
   A JavaScript module which performs a depth first search on a graph using the graph's adjacency matrix as input to determine whether or not the graph is connected.  If a connected graph's adjacency matrix is input, true is returned.  If a disconnected graph's adjacency matrix is input, false is returned.
 */
+
+'use strict'
+
 module.exports = exports = function (input) {
   var reach, totalConnections
   reach = []
@@ -11,6 +14,7 @@ module.exports = exports = function (input) {
   if (totalConnections === input.length) return true
   return false
 }
+
 function depthFirstSearch (value, reach, numberOfVertices, adjacencyMatrix) {
   reach[value] = 1
   for (var i = 0; i < numberOfVertices; i++) if (adjacencyMatrix[value][i] && !reach[i]) depthFirstSearch(i, reach, numberOfVertices, adjacencyMatrix)

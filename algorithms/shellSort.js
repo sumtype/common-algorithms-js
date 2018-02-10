@@ -1,6 +1,9 @@
 /*
   A JavaScript module which performs a shell sort on a given array of numbers, ordering the elements from lowest to highest.
 */
+
+'use strict'
+
 module.exports = exports = function (input) {
   var gap = input.length
   do {

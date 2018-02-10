@@ -1,7 +1,13 @@
 /*
   A JavaScript module which includes several common algorithms.
 */
+
+'use strict'
+
+// Native Node Modules
 const path = require('path')
+
+// Algorithm Exports
 exports.selectionSort = require(path.join(__dirname, 'algorithms', 'selectionSort'))
 exports.bubbleSort = require(path.join(__dirname, 'algorithms', 'bubbleSort'))
 exports.linearSearch = require(path.join(__dirname, 'algorithms', 'linearSearch'))
@@ -26,4 +32,6 @@ exports.shellSort = require(path.join(__dirname, 'algorithms', 'shellSort'))
 exports.damerauLevenshteinDistance = require(path.join(__dirname, 'algorithms', 'damerauLevenshteinDistance'))
 exports.countingSort = require(path.join(__dirname, 'algorithms', 'countingSort'))
 exports.gnomeSort = require(path.join(__dirname, 'algorithms', 'gnomeSort'))
+exports.rayCasting = require(path.join(__dirname, 'algorithms', 'rayCasting'))
+
 module.exports = exports

@@ -2,6 +2,9 @@
   A JavaScript module which returns the Levenshtein distance between two input strings.  Also known as the edit distance, the minimum number of substitutions, additions, and/or deletions to change one input string into the other.  Adapted from an existing JavaScript implementation of the algorithm.
   Citation: "Algorithm Implementation/Strings/Levenshtein Distance - Wikibooks, Open Books For An Open World". 2016. En.Wikibooks.Org. https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#JavaScript.
 */
+
+'use strict'
+
 module.exports = exports = function (s1, s2) {
   if (s1.length === 0) return s2.length
   if (s2.length === 0) return s1.length

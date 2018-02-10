@@ -3,6 +3,8 @@
   Citation: "Javascript Damerau Levenshtein Algorithim". 2016. David Hamp-Gonsalves. http://www.davidhampgonsalves.com/Damerau-Levenshtein/.
 */
 
+'use strict'
+
 var matrix, sd, combinedStrings
 
 module.exports = exports = function damerauLevenshteinDistance (s1, s2) {

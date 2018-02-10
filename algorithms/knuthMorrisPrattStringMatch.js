@@ -5,6 +5,8 @@
   Citation: https://www.nayuki.io/page/knuth-morris-pratt-string-matching.
 */
 
+'use strict'
+
 var input, pattern, longestSuffixPrefix
 
 module.exports = exports = function (userInput, stringPattern) {
@@ -38,6 +40,7 @@ function setLongestSuffixPrefix (j, i) {
   while (j > 0 && input.charAt(i) !== pattern.charAt(j)) j = longestSuffixPrefix[j - 1]
   return j
 }
+
 /*
  * (MIT License)
  * Permission is hereby granted, free of charge, to any person obtaining a copy of

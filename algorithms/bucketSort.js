@@ -4,6 +4,9 @@
   Copyright 2015 Daniel Imms (http://www.growingwiththeweb.com) (MIT), 2016 James Mason
   Citation: http://www.growingwiththeweb.com/2015/06/bucket-sort.html.
 */
+
+'use strict'
+
 module.exports = exports = function (input, bucketSize) {
   if (!input.length) return input
   var min, max, output
@@ -25,6 +28,7 @@ module.exports = exports = function (input, bucketSize) {
   }
   return output
 }
+
 function insertionSort (input) {
   for (var i = 0; i < input.length; i++) {
     var index = i

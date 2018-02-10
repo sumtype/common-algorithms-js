@@ -2,12 +2,15 @@
   A JavaScript module which performs a quick sort on a given array of numbers, ordering the elements from lowest to highest.
 */
 
+'use strict'
+
 var input
 
 module.exports = exports = function (a) {
   input = a
   return quickSort()
 }
+
 function quickSort (first, last) {
   if (typeof first === 'undefined') first = 0
   if (typeof last === 'undefined') last = input.length - 1
