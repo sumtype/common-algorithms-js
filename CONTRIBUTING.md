@@ -4,7 +4,7 @@ Welcome!  Please feel free to contribute algorithms, issues, fixes, and translat
 
 ## Algorithms
 
-There are a few steps to adding an algorithm to the repository.  Please remember that all JavaScript contributions must follow [JavaScript Standard Style](https://standardjs.com/) rules and be written in ES5.
+There are a few steps to adding an algorithm to the repository.  Please remember that all JavaScript algorithm and test contributions must follow [JavaScript Standard Style](https://standardjs.com/) rules and be written in ES5 (tests may use ES6).
 
 1) Please create your JavaScript algorithm file inside the [algorithms directory](https://github.com/sumtype/common-algorithms-js/tree/master/algorithms), following the camel-case naming convention used.  The file should follow the same layout conventions inside the other algorithm files and have a comment header explaining what the function does and what parameters it expects.
 
