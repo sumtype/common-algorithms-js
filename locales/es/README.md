@@ -47,6 +47,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 ### Número
 
 * [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
+* [Set de Poder](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
 
 ## Pruebas
 

@@ -43,6 +43,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 ### Number
 
 * [Sieve of Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
+* [Power Set](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
 
 ## Testing
 

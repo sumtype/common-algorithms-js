@@ -34,5 +34,8 @@ exports.countingSort = require(path.join(__dirname, 'algorithms', 'countingSort'
 exports.gnomeSort = require(path.join(__dirname, 'algorithms', 'gnomeSort'))
 exports.rayCasting = require(path.join(__dirname, 'algorithms', 'rayCasting'))
 exports.cocktailSort = require(path.join(__dirname, 'algorithms', 'cocktailSort'))
+exports.sattoloCycle = require(path.join(__dirname, 'algorithms', 'sattoloCycle'))
+exports.sieveOfEratosthenes = require(path.join(__dirname, 'algorithms', 'sieveOfEratosthenes'))
+exports.powerSet = require(path.join(__dirname, 'algorithms', 'powerSet'))
 
 module.exports = exports
