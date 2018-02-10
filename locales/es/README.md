@@ -1,41 +1,45 @@
 # Algoritmos Comunes en JavaScript
 
-[![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![BCH compliance](https://bettercodehub.com/edge/badge/sumtype/common-algorithms-js?branch=master)](https://bettercodehub.com/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) de ensayo utilizado.
 
 ### Colección
 
-- [Selección Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
-- [Ordenamiento de Burbuja](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
-- [Búsqueda Lineal](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/linearSearch.js)
-- [Combinar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
-- [Ordenación Rápida](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)
-- [Búsqueda Binaria](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/binarySearch.js)
-- [Ordenamiento por Inserción](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/insertionSort.js)
-- [Clasificación del Cucharón](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bucketSort.js)
-- [Clasificación de Shell](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
-- [Contar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/countingSort.js)
-- [Ordenar Gnomo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/gnomeSort.js)
-- [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
+* [Selección Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
+* [Ordenamiento de Burbuja](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
+* [Búsqueda Lineal](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/linearSearch.js)
+* [Combinar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
+* [Ordenación Rápida](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)
+* [Búsqueda Binaria](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/binarySearch.js)
+* [Ordenamiento por Inserción](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/insertionSort.js)
+* [Clasificación del Cucharón](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bucketSort.js)
+* [Clasificación de Shell](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
+* [Contar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/countingSort.js)
+* [Ordenar Gnomo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/gnomeSort.js)
+* [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
 
 ### Cuerda
 
-- [Combinación de Cuerdas de Fuerza Bruta](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
-- [Más Largo Subcadena Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubstring.js)
-- [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
-- [Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
-- [Damerau-Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
-- [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensonDiceCoefficient.js)
-- [Knuth-Morris-Pratt Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
-- [Rabin-Karp Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
-- [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
-- [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
+* [Combinación de Cuerdas de Fuerza Bruta](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
+* [Más Largo Subcadena Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubstring.js)
+* [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
+* [Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
+* [Damerau-Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
+* [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensonDiceCoefficient.js)
+* [Knuth-Morris-Pratt Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
+* [Rabin-Karp Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
+* [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
+* [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
 
 ### Grafico
 
-- [Profundidad Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/depthFirstSearch.js)
-- [Amplitud Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/breadthFirstSearch.js)
+* [Profundidad Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/depthFirstSearch.js)
+* [Amplitud Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/breadthFirstSearch.js)
+
+### Geometría
+
+* [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
 
 ## Pruebas
 
