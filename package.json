@@ -14,7 +14,14 @@
   "keywords": [
     "common algorithms",
     "algorithms",
-    "javascript algorithms"
+    "javascript algorithms",
+    "sorting-algorithms",
+    "string-algorithms",
+    "array-algorithms",
+    "graph-algorithms",
+    "geometry-algorithms",
+    "number-algorithms",
+    "computer-science"
   ],
   "author": "James Mason",
   "license": "MIT",

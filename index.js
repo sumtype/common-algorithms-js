@@ -39,5 +39,6 @@ exports.sieveOfEratosthenes = require(path.join(__dirname, 'algorithms', 'sieveO
 exports.powerSet = require(path.join(__dirname, 'algorithms', 'powerSet'))
 exports.radixSort = require(path.join(__dirname, 'algorithms', 'radixSort'))
 exports.sleepSort = require(path.join(__dirname, 'algorithms', 'sleepSort'))
+exports.bezierCurve = require(path.join(__dirname, 'algorithms', 'bezierCurve'))
 
 module.exports = exports

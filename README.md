@@ -41,6 +41,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 ### Geometry
 
 * [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
+* [Bezier Curve](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bezierCurve.js)
 
 ### Number
 
