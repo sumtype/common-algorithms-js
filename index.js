@@ -57,6 +57,7 @@ const stringAlgorithms = {
   levenshteinDistance: require(path.join(__dirname, 'algorithms', 'levenshteinDistance')),
   longestCommonSubsequence: require(path.join(__dirname, 'algorithms', 'longestCommonSubsequence')),
   longestCommonSubstring: require(path.join(__dirname, 'algorithms', 'longestCommonSubstring')),
+  matchingDelimiters: require(path.join(__dirname, 'algorithms', 'matchingDelimiters'))
   rabinKarpStringMatch: require(path.join(__dirname, 'algorithms', 'rabinKarpStringMatch')),
   sorensenDiceCoefficient: require(path.join(__dirname, 'algorithms', 'sorensenDiceCoefficient'))
 }
@@ -107,6 +108,7 @@ exports.knuthMorrisPrattStringMatch = stringAlgorithms.knuthMorrisPrattStringMat
 exports.levenshteinDistance = stringAlgorithms.levenshteinDistance
 exports.longestCommonSubsequence = stringAlgorithms.longestCommonSubsequence
 exports.longestCommonSubstring = stringAlgorithms.longestCommonSubstring
+exports.matchingDelimiters = stringAlgorithms.matchingDelimiters
 exports.rabinKarpStringMatch = stringAlgorithms.rabinKarpStringMatch
 exports.sorensenDiceCoefficient = stringAlgorithms.sorensenDiceCoefficient
 

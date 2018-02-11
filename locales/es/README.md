@@ -36,6 +36,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 * [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
 * [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
 * [Hamming Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/hammingDistance.js)
+* [Delimitadores a Juego](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/matchingDelimiters.js)
 
 ### Grafico
 
