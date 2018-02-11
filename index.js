@@ -7,38 +7,105 @@
 // Native Node Modules
 const path = require('path')
 
-// Algorithm Exports
-exports.selectionSort = require(path.join(__dirname, 'algorithms', 'selectionSort'))
-exports.bubbleSort = require(path.join(__dirname, 'algorithms', 'bubbleSort'))
-exports.linearSearch = require(path.join(__dirname, 'algorithms', 'linearSearch'))
-exports.bruteForceStringMatch = require(path.join(__dirname, 'algorithms', 'bruteForceStringMatch'))
-exports.mergeSort = require(path.join(__dirname, 'algorithms', 'mergeSort'))
-exports.quickSort = require(path.join(__dirname, 'algorithms', 'quickSort'))
-exports.binarySearch = require(path.join(__dirname, 'algorithms', 'binarySearch'))
-exports.insertionSort = require(path.join(__dirname, 'algorithms', 'insertionSort'))
-exports.durstenfeldShuffle = require(path.join(__dirname, 'algorithms', 'durstenfeldShuffle'))
-exports.depthFirstSearch = require(path.join(__dirname, 'algorithms', 'depthFirstSearch'))
-exports.breadthFirstSearch = require(path.join(__dirname, 'algorithms', 'breadthFirstSearch'))
-exports.longestCommonSubstring = require(path.join(__dirname, 'algorithms', 'longestCommonSubstring'))
-exports.longestCommonSubsequence = require(path.join(__dirname, 'algorithms', 'longestCommonSubsequence'))
-exports.levenshteinDistance = require(path.join(__dirname, 'algorithms', 'levenshteinDistance'))
-exports.knuthMorrisPrattStringMatch = require(path.join(__dirname, 'algorithms', 'knuthMorrisPrattStringMatch'))
-exports.rabinKarpStringMatch = require(path.join(__dirname, 'algorithms', 'rabinKarpStringMatch'))
-exports.boyerMooreStringMatch = require(path.join(__dirname, 'algorithms', 'boyerMooreStringMatch'))
-exports.boyerMooreHorspoolStringMatch = require(path.join(__dirname, 'algorithms', 'boyerMooreHorspoolStringMatch'))
-exports.sorensonDiceCoefficient = require(path.join(__dirname, 'algorithms', 'sorensonDiceCoefficient'))
-exports.bucketSort = require(path.join(__dirname, 'algorithms', 'bucketSort'))
-exports.shellSort = require(path.join(__dirname, 'algorithms', 'shellSort'))
-exports.damerauLevenshteinDistance = require(path.join(__dirname, 'algorithms', 'damerauLevenshteinDistance'))
-exports.countingSort = require(path.join(__dirname, 'algorithms', 'countingSort'))
-exports.gnomeSort = require(path.join(__dirname, 'algorithms', 'gnomeSort'))
-exports.rayCasting = require(path.join(__dirname, 'algorithms', 'rayCasting'))
-exports.cocktailSort = require(path.join(__dirname, 'algorithms', 'cocktailSort'))
-exports.sattoloCycle = require(path.join(__dirname, 'algorithms', 'sattoloCycle'))
-exports.sieveOfEratosthenes = require(path.join(__dirname, 'algorithms', 'sieveOfEratosthenes'))
-exports.powerSet = require(path.join(__dirname, 'algorithms', 'powerSet'))
-exports.radixSort = require(path.join(__dirname, 'algorithms', 'radixSort'))
-exports.sleepSort = require(path.join(__dirname, 'algorithms', 'sleepSort'))
-exports.bezierCurve = require(path.join(__dirname, 'algorithms', 'bezierCurve'))
+// Array Algorithms
+const arrayAlgorithms = {
+  binarySearch: require(path.join(__dirname, 'algorithms', 'binarySearch')),
+  bubbleSort: require(path.join(__dirname, 'algorithms', 'bubbleSort')),
+  bucketSort: require(path.join(__dirname, 'algorithms', 'bucketSort')),
+  cocktailSort: require(path.join(__dirname, 'algorithms', 'cocktailSort')),
+  countingSort: require(path.join(__dirname, 'algorithms', 'countingSort')),
+  durstenfeldShuffle: require(path.join(__dirname, 'algorithms', 'durstenfeldShuffle')),
+  gnomeSort: require(path.join(__dirname, 'algorithms', 'gnomeSort')),
+  insertionSort: require(path.join(__dirname, 'algorithms', 'insertionSort')),
+  linearSearch: require(path.join(__dirname, 'algorithms', 'linearSearch')),
+  mergeSort: require(path.join(__dirname, 'algorithms', 'mergeSort')),
+  quickSort: require(path.join(__dirname, 'algorithms', 'quickSort')),
+  radixSort: require(path.join(__dirname, 'algorithms', 'radixSort')),
+  sattoloCycle: require(path.join(__dirname, 'algorithms', 'sattoloCycle')),
+  selectionSort: require(path.join(__dirname, 'algorithms', 'selectionSort')),
+  shellSort: require(path.join(__dirname, 'algorithms', 'shellSort')),
+  sleepSort: require(path.join(__dirname, 'algorithms', 'sleepSort'))
+}
+
+// Geometry Algorithms
+const geometryAlgorithms = {
+  bezierCurve: require(path.join(__dirname, 'algorithms', 'bezierCurve')),
+  rayCasting: require(path.join(__dirname, 'algorithms', 'rayCasting'))
+}
+
+// Graph Algorithms
+const graphAlgorithms = {
+  breadthFirstSearch: require(path.join(__dirname, 'algorithms', 'breadthFirstSearch')),
+  depthFirstSearch: require(path.join(__dirname, 'algorithms', 'depthFirstSearch'))
+}
+
+// Math Algorithms
+const mathAlgorithms = {
+  powerSet: require(path.join(__dirname, 'algorithms', 'powerSet')),
+  sieveOfEratosthenes: require(path.join(__dirname, 'algorithms', 'sieveOfEratosthenes'))
+}
+
+// String Algorithms
+const stringAlgorithms = {
+  boyerMooreStringMatch: require(path.join(__dirname, 'algorithms', 'boyerMooreStringMatch')),
+  boyerMooreHorspoolStringMatch: require(path.join(__dirname, 'algorithms', 'boyerMooreHorspoolStringMatch')),
+  bruteForceStringMatch: require(path.join(__dirname, 'algorithms', 'bruteForceStringMatch')),
+  damerauLevenshteinDistance: require(path.join(__dirname, 'algorithms', 'damerauLevenshteinDistance')),
+  hammingDistance: require(path.join(__dirname, 'algorithms', 'hammingDistance')),
+  knuthMorrisPrattStringMatch: require(path.join(__dirname, 'algorithms', 'knuthMorrisPrattStringMatch')),
+  levenshteinDistance: require(path.join(__dirname, 'algorithms', 'levenshteinDistance')),
+  longestCommonSubsequence: require(path.join(__dirname, 'algorithms', 'longestCommonSubsequence')),
+  longestCommonSubstring: require(path.join(__dirname, 'algorithms', 'longestCommonSubstring')),
+  rabinKarpStringMatch: require(path.join(__dirname, 'algorithms', 'rabinKarpStringMatch')),
+  sorensenDiceCoefficient: require(path.join(__dirname, 'algorithms', 'sorensenDiceCoefficient'))
+}
+
+// Array Algorithm Exports
+exports.array = arrayAlgorithms
+exports.binarySearch = arrayAlgorithms.binarySearch
+exports.bubbleSort = arrayAlgorithms.bubbleSort
+exports.bucketSort = arrayAlgorithms.bucketSort
+exports.cocktailSort = arrayAlgorithms.cocktailSort
+exports.countingSort = arrayAlgorithms.countingSort
+exports.durstenfeldShuffle = arrayAlgorithms.durstenfeldShuffle
+exports.gnomeSort = arrayAlgorithms.gnomeSort
+exports.insertionSort = arrayAlgorithms.insertionSort
+exports.linearSearch = arrayAlgorithms.linearSearch
+exports.mergeSort = arrayAlgorithms.mergeSort
+exports.quickSort = arrayAlgorithms.quickSort
+exports.radixSort = arrayAlgorithms.radixSort
+exports.sattoloCycle = arrayAlgorithms.sattoloCycle
+exports.selectionSort = arrayAlgorithms.selectionSort
+exports.shellSort = arrayAlgorithms.shellSort
+exports.sleepSort = arrayAlgorithms.sleepSort
+
+// String Algorithm Exports
+exports.string = stringAlgorithms
+exports.boyerMooreStringMatch = stringAlgorithms.boyerMooreStringMatch
+exports.boyerMooreHorspoolStringMatch = stringAlgorithms.boyerMooreHorspoolStringMatch
+exports.bruteForceStringMatch = stringAlgorithms.bruteForceStringMatch
+exports.damerauLevenshteinDistance = stringAlgorithms.damerauLevenshteinDistance
+exports.hammingDistance = stringAlgorithms.hammingDistance
+exports.knuthMorrisPrattStringMatch = stringAlgorithms.knuthMorrisPrattStringMatch
+exports.levenshteinDistance = stringAlgorithms.levenshteinDistance
+exports.longestCommonSubsequence = stringAlgorithms.longestCommonSubsequence
+exports.longestCommonSubstring = stringAlgorithms.longestCommonSubstring
+exports.rabinKarpStringMatch = stringAlgorithms.rabinKarpStringMatch
+exports.sorensenDiceCoefficient = stringAlgorithms.sorensenDiceCoefficient
+
+// Graph Algorithm Exports
+exports.graph = graphAlgorithms
+exports.breadthFirstSearch = graphAlgorithms.breadthFirstSearch
+exports.depthFirstSearch = graphAlgorithms.depthFirstSearch
+
+// Geometry Algorithm Exports
+exports.geometry = geometryAlgorithms
+exports.bezierCurve = geometryAlgorithms.bezierCurve
+exports.rayCasting = geometryAlgorithms.rayCasting
+
+// Math Algorithm Exports
+exports.math = mathAlgorithms
+exports.powerSet = mathAlgorithms.powerSet
+exports.sieveOfEratosthenes = mathAlgorithms.sieveOfEratosthenes
 
 module.exports = exports

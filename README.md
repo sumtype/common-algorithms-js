@@ -5,6 +5,7 @@
 Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) testing.
 
 ### Array
+
 * [Binary Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/binarySearch.js)
 * [Bubble Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
 * [Bucket Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bucketSort.js)
@@ -22,31 +23,34 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 * [Shell Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
 * [Sleep Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sleepSort.js)
 
+### Geometry
+
+* [Bezier Curve](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bezierCurve.js)
+* [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
+
+### Graph
+
+* [Breadth First Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/breadthFirstSearch.js)
+* [Depth First Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/depthFirstSearch.js)
+
+### Math
+
+* [Power Set](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
+* [Sieve of Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
+
 ### String
+
 * [Boyer-Moore String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
 * [Boyer-Moore-Horspool String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
 * [Brute Force String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
 * [Damerau-Levenshtein Distance](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
+* [Hamming Distance](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/hammingDistance.js)
 * [Knuth-Morris-Pratt String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
 * [Levenshtein Distance](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
 * [Longest Common Subsequence](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
 * [Longest Common Substring](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubstring.js)
 * [Rabin-Karp String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
-* [Sørensen-Dice Coefficient](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensonDiceCoefficient.js)
-
-### Graph
-* [Breadth First Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/breadthFirstSearch.js)
-* [Depth First Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/depthFirstSearch.js)
-
-### Geometry
-
-* [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
-* [Bezier Curve](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bezierCurve.js)
-
-### Number
-
-* [Power Set](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
-* [Sieve of Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
+* [Sørensen-Dice Coefficient](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensenDiceCoefficient.js)
 
 ## Testing
 

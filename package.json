@@ -1,6 +1,6 @@
 {
   "name": "common-algorithms-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Commonly used algorithms implemented in JavaScript.",
   "main": "index.js",
   "scripts": {
@@ -13,15 +13,17 @@
   },
   "keywords": [
     "common algorithms",
+    "javascript",
     "algorithms",
     "javascript algorithms",
-    "sorting-algorithms",
-    "string-algorithms",
-    "array-algorithms",
-    "graph-algorithms",
-    "geometry-algorithms",
-    "number-algorithms",
-    "computer-science"
+    "sorting algorithms",
+    "string algorithms",
+    "array algorithms",
+    "graph algorithms",
+    "geometry algorithms",
+    "computer science",
+    "computer science algorithms"
+    "math algorithms"
   ],
   "author": "James Mason",
   "license": "MIT",

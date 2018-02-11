@@ -30,11 +30,12 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 * [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
 * [Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
 * [Damerau-Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
-* [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensonDiceCoefficient.js)
+* [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensenDiceCoefficient.js)
 * [Knuth-Morris-Pratt Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
 * [Rabin-Karp Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
 * [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
 * [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
+* [Hamming Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/hammingDistance.js)
 
 ### Grafico
 
@@ -46,7 +47,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 * [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
 * [Bezier Curva](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bezierCurve.js)
 
-### Número
+### Mates
 
 * [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
 * [Set de Poder](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
