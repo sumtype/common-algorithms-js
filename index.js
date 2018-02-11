@@ -42,6 +42,7 @@ const graphAlgorithms = {
 // Math Algorithms
 const mathAlgorithms = {
   powerSet: require(path.join(__dirname, 'algorithms', 'powerSet')),
+  primeFactors: require(path.join(__dirname, 'algorithms', 'primeFactors')),
   sieveOfEratosthenes: require(path.join(__dirname, 'algorithms', 'sieveOfEratosthenes'))
 }
 
@@ -79,6 +80,22 @@ exports.selectionSort = arrayAlgorithms.selectionSort
 exports.shellSort = arrayAlgorithms.shellSort
 exports.sleepSort = arrayAlgorithms.sleepSort
 
+// Geometry Algorithm Exports
+exports.geometry = geometryAlgorithms
+exports.bezierCurve = geometryAlgorithms.bezierCurve
+exports.rayCasting = geometryAlgorithms.rayCasting
+
+// Graph Algorithm Exports
+exports.graph = graphAlgorithms
+exports.breadthFirstSearch = graphAlgorithms.breadthFirstSearch
+exports.depthFirstSearch = graphAlgorithms.depthFirstSearch
+
+// Math Algorithm Exports
+exports.math = mathAlgorithms
+exports.powerSet = mathAlgorithms.powerSet
+exports.primeFactors = mathAlgorithms.primeFactors
+exports.sieveOfEratosthenes = mathAlgorithms.sieveOfEratosthenes
+
 // String Algorithm Exports
 exports.string = stringAlgorithms
 exports.boyerMooreStringMatch = stringAlgorithms.boyerMooreStringMatch
@@ -92,20 +109,5 @@ exports.longestCommonSubsequence = stringAlgorithms.longestCommonSubsequence
 exports.longestCommonSubstring = stringAlgorithms.longestCommonSubstring
 exports.rabinKarpStringMatch = stringAlgorithms.rabinKarpStringMatch
 exports.sorensenDiceCoefficient = stringAlgorithms.sorensenDiceCoefficient
-
-// Graph Algorithm Exports
-exports.graph = graphAlgorithms
-exports.breadthFirstSearch = graphAlgorithms.breadthFirstSearch
-exports.depthFirstSearch = graphAlgorithms.depthFirstSearch
-
-// Geometry Algorithm Exports
-exports.geometry = geometryAlgorithms
-exports.bezierCurve = geometryAlgorithms.bezierCurve
-exports.rayCasting = geometryAlgorithms.rayCasting
-
-// Math Algorithm Exports
-exports.math = mathAlgorithms
-exports.powerSet = mathAlgorithms.powerSet
-exports.sieveOfEratosthenes = mathAlgorithms.sieveOfEratosthenes
 
 module.exports = exports
