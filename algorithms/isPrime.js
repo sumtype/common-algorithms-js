@@ -1,0 +1,12 @@
+/*
+  A JavaScript module which outputs a boolean based on whether the input number is prime.  Adapted from an existing JavaScript implementation of the algorithm.
+  Citation: Felipe Ribeiro, "algorithms.js", https://github.com/felipernb/algorithms.js, https://github.com/felipernb/algorithms.js/blob/master/src/algorithms/math/primality_tests.js
+*/
+
+'use strict'
+
+module.exports = exports = (n = 0) => {
+  if (n < 2) return false
+  for (let i = 2; i <= Math.sqrt(n); ++i) if (n % i === 0) return false
+  return true
+}

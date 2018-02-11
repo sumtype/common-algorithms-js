@@ -41,6 +41,7 @@ const graphAlgorithms = {
 
 // Math Algorithms
 const mathAlgorithms = {
+  isPrime: require(path.join(__dirname, 'algorithms', 'isPrime')),
   powerSet: require(path.join(__dirname, 'algorithms', 'powerSet')),
   primeFactors: require(path.join(__dirname, 'algorithms', 'primeFactors')),
   sieveOfEratosthenes: require(path.join(__dirname, 'algorithms', 'sieveOfEratosthenes'))
