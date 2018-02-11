@@ -1,5 +1,5 @@
 /*
-  A JavaScript module which outputs a boolean based on whether the input number is prime.  Adapted from an existing JavaScript implementation of the algorithm.
+  A JavaScript module which outputs a boolean based on whether the input number is prime (uses trial division variant).  Adapted from an existing JavaScript implementation of the algorithm.
   Citation: Felipe Ribeiro, "algorithms.js", https://github.com/felipernb/algorithms.js, https://github.com/felipernb/algorithms.js/blob/master/src/algorithms/math/primality_tests.js
 */
 

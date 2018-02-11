@@ -41,6 +41,7 @@ const graphAlgorithms = {
 
 // Math Algorithms
 const mathAlgorithms = {
+  fibonacciNumber: require(path.join(__dirname, 'algorithms', 'fibonacciNumber')),
   isPrime: require(path.join(__dirname, 'algorithms', 'isPrime')),
   powerSet: require(path.join(__dirname, 'algorithms', 'powerSet')),
   primeFactors: require(path.join(__dirname, 'algorithms', 'primeFactors')),
@@ -94,6 +95,7 @@ exports.depthFirstSearch = graphAlgorithms.depthFirstSearch
 
 // Math Algorithm Exports
 exports.math = mathAlgorithms
+exports.fibonacciNumber = mathAlgorithms.fibonacciNumber
 exports.powerSet = mathAlgorithms.powerSet
 exports.primeFactors = mathAlgorithms.primeFactors
 exports.sieveOfEratosthenes = mathAlgorithms.sieveOfEratosthenes

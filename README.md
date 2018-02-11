@@ -35,6 +35,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 
 ### Math
 
+* [Fibonacci Number](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/fibonacciNumber.js)
 * [Is Prime](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/isPrime.js)
 * [Power Set](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
 * [Prime Factors](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/primeFactors.js)

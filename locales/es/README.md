@@ -50,6 +50,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 
 ### Mates
 
+* [Fibonacci Número](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/fibonacciNumber.js)
 * [Es Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/isPrime.js)
 * [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
 * [Factores Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/primeFactors.js)
