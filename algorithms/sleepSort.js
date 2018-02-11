@@ -6,7 +6,7 @@
 
 module.exports = exports = function (array, cb) {
   var negative = [], positive = [], i = null, max = Math.max.apply(null, array.map(function(n) { return Math.abs(n) })), min = Math.min.apply(null, array)
-  for (i = 0; i < array.length; i++) setTimeout(wake(array[i], max, min, array.length, negative, positive, cb), Math.abs(array[i]) * 2)
+  for (i = 0; i < array.length; i++) setTimeout(wake(array[i], max, min, array.length, negative, positive, cb), Math.abs(array[i]) * 3)
 }
 
 function wake(n, max, min, arrayLength, negative, positive, cb) {
