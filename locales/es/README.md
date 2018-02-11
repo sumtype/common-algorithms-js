@@ -22,6 +22,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 * [Ordenar Dormir](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sleepSort.js)
 * [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
 * [Sattolo Ciclo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sattoloCycle.js)
+* [Depósito Muestreo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/reservoirSampling.js)
 
 ### Cuerda
 

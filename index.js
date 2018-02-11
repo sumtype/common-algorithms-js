@@ -21,6 +21,7 @@ const arrayAlgorithms = {
   mergeSort: require(path.join(__dirname, 'algorithms', 'mergeSort')),
   quickSort: require(path.join(__dirname, 'algorithms', 'quickSort')),
   radixSort: require(path.join(__dirname, 'algorithms', 'radixSort')),
+  reservoirSampling: require(path.join(__dirname, 'algorithms', 'reservoirSampling')),
   sattoloCycle: require(path.join(__dirname, 'algorithms', 'sattoloCycle')),
   selectionSort: require(path.join(__dirname, 'algorithms', 'selectionSort')),
   shellSort: require(path.join(__dirname, 'algorithms', 'shellSort')),
@@ -78,6 +79,7 @@ exports.linearSearch = arrayAlgorithms.linearSearch
 exports.mergeSort = arrayAlgorithms.mergeSort
 exports.quickSort = arrayAlgorithms.quickSort
 exports.radixSort = arrayAlgorithms.radixSort
+exports.reservoirSampling = arrayAlgorithms.reservoirSampling
 exports.sattoloCycle = arrayAlgorithms.sattoloCycle
 exports.selectionSort = arrayAlgorithms.selectionSort
 exports.shellSort = arrayAlgorithms.shellSort

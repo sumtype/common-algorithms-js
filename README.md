@@ -18,6 +18,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 * [Merge Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
 * [Quick Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)
 * [Radix Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/radixSort.js)
+* [Reservoir Sampling](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/reservoirSampling.js)
 * [Sattolo Cycle](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sattoloCycle.js)
 * [Selection Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
 * [Shell Sort](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
