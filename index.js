@@ -37,5 +37,6 @@ exports.cocktailSort = require(path.join(__dirname, 'algorithms', 'cocktailSort'
 exports.sattoloCycle = require(path.join(__dirname, 'algorithms', 'sattoloCycle'))
 exports.sieveOfEratosthenes = require(path.join(__dirname, 'algorithms', 'sieveOfEratosthenes'))
 exports.powerSet = require(path.join(__dirname, 'algorithms', 'powerSet'))
+exports.radixSort = require(path.join(__dirname, 'algorithms', 'radixSort'))
 
 module.exports = exports

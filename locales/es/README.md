@@ -18,9 +18,9 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 * [Clasificación de Shell](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
 * [Contar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/countingSort.js)
 * [Ordenar Gnomo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/gnomeSort.js)
+* [Clase de Radix](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/radixSort.js)
 * [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
 * [Sattolo Ciclo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sattoloCycle.js)
-
 
 ### Cuerda
 
