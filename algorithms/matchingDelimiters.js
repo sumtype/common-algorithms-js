@@ -16,5 +16,5 @@ module.exports = exports = (s, m = {'[': ']', '{': '}'}, stack = [], opening = [
       if (s[i] !== m[stack.pop()]) return false
     }
   }
-  return !!!stack.length
+  return !stack.length
 }

@@ -5,7 +5,12 @@
 'use strict'
 
 module.exports = function (array) {
-  var min = 0, max = 0, val = 0, counts = null, i = null, j = null
+  var min = 0
+  var max = 0
+  var val = 0
+  var counts = null
+  var i = null
+  var j = null
   for (i = 0; i < array.length; i++) {
     if (min > array[i]) {
       min = array[i]

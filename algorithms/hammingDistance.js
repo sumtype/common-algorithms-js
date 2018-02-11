@@ -7,7 +7,8 @@
 
 module.exports = exports = function (s1, s2) {
   if (s1.length !== s2.length) return -1
-  var distance = 0, i = null
+  var distance = 0
+  var i = null
   for (i = 0; i < s1.length; i++) if (s1[i] !== s2[i]) distance += 1
   return distance
 }

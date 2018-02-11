@@ -5,8 +5,9 @@
 'use strict'
 
 module.exports = function (array) {
-  var sorted = true, i = null
-  while(sorted) {
+  var sorted = true
+  var i = null
+  while (sorted) {
     for (i = 0; i < array.length - 1; i++) {
       if (array[i] > array[i + 1]) {
         array = swapIndicies(array, i, 1)
@@ -25,7 +26,7 @@ module.exports = function (array) {
   return array
 }
 
-function swapIndicies(array, index, direction) {
+function swapIndicies (array, index, direction) {
   var temp = array[index]
   array[index] = array[index + direction]
   array[index + direction] = temp

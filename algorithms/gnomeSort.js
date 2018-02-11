@@ -10,7 +10,7 @@ module.exports = function (array) {
   return array
 }
 
-function swapIndicies(array, index) {
+function swapIndicies (array, index) {
   var temp = array[index]
   array[index] = array[--index]
   array[index] = temp

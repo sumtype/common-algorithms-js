@@ -6,10 +6,17 @@
 'use strict'
 
 module.exports = exports = function (points) {
-  var c = [1], i = null, j = null, curve = {
+  var c = [1]
+  var i = null
+  var j = null
+  var curve = {
     controlPoints: [],
-    get: function(pointOnCurve) {
-      var res = {x: 0, y: 0}, i = null, a = 1, b = 1, c = []
+    get: function (pointOnCurve) {
+      var res = {x: 0, y: 0}
+      var i = null
+      var a = 1
+      var b = 1
+      var c = []
       for (i = 0; i < this.controlPoints.length; ++i) {
         c.push(a)
         a *= pointOnCurve

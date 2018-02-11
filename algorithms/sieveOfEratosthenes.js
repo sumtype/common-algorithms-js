@@ -6,8 +6,10 @@
 
 module.exports = exports = function (n) {
   if (n < 2) return []
-  var numbers = new Array(), i = null, j = null
+  var numbers = []
+  var i = null
+  var j = null
   for (i = 2; i <= n; i++) numbers.push(i)
   for (i = 2; i <= Math.sqrt(n); i++) if (numbers[i - 2]) for (j = Math.pow(i, 2) - 2; j < n; j += i) numbers[j] = false
-  return numbers.filter(function(v) { return !!v })
+  return numbers.filter(function (v) { return !!v })
 }

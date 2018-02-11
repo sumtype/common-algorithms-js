@@ -10,9 +10,9 @@ module.exports = exports = function (shape, point) {
   return !!(count % 2)
 }
 
-function intersects(a, b, x, y) {
+function intersects (a, b, x, y) {
   if (a.y <= b.y) {
-    if (y <= a.y || y > b.y || x >= a.x && x >= b.x) return false
+    if (y <= a.y || y > b.y || (x >= a.x && x >= b.x)) return false
     if (x < a.x && x < b.x) return true
     return (y - a.y) / (x - a.x) > (b.y - a.y) / (b.x - a.x)
   }

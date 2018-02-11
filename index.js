@@ -58,7 +58,7 @@ const stringAlgorithms = {
   levenshteinDistance: require(path.join(__dirname, 'algorithms', 'levenshteinDistance')),
   longestCommonSubsequence: require(path.join(__dirname, 'algorithms', 'longestCommonSubsequence')),
   longestCommonSubstring: require(path.join(__dirname, 'algorithms', 'longestCommonSubstring')),
-  matchingDelimiters: require(path.join(__dirname, 'algorithms', 'matchingDelimiters'))
+  matchingDelimiters: require(path.join(__dirname, 'algorithms', 'matchingDelimiters')),
   rabinKarpStringMatch: require(path.join(__dirname, 'algorithms', 'rabinKarpStringMatch')),
   sorensenDiceCoefficient: require(path.join(__dirname, 'algorithms', 'sorensenDiceCoefficient'))
 }
