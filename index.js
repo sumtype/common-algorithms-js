@@ -52,6 +52,7 @@ const mathAlgorithms = {
 // String Algorithms
 const stringAlgorithms = {
   areAnagrams: require(path.join(__dirname, 'algorithms', 'areAnagrams')),
+  arePalindromes: require(path.join(__dirname, 'algorithms', 'arePalindromes')),
   boyerMooreStringMatch: require(path.join(__dirname, 'algorithms', 'boyerMooreStringMatch')),
   boyerMooreHorspoolStringMatch: require(path.join(__dirname, 'algorithms', 'boyerMooreHorspoolStringMatch')),
   bruteForceStringMatch: require(path.join(__dirname, 'algorithms', 'bruteForceStringMatch')),
@@ -106,6 +107,7 @@ exports.sieveOfEratosthenes = mathAlgorithms.sieveOfEratosthenes
 // String Algorithm Exports
 exports.string = stringAlgorithms
 exports.areAnagrams = stringAlgorithms.areAnagrams
+exports.arePalindromes = stringAlgorithms.arePalindromes
 exports.boyerMooreStringMatch = stringAlgorithms.boyerMooreStringMatch
 exports.boyerMooreHorspoolStringMatch = stringAlgorithms.boyerMooreHorspoolStringMatch
 exports.bruteForceStringMatch = stringAlgorithms.bruteForceStringMatch

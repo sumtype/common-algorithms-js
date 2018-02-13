@@ -27,6 +27,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 ### Cuerda
 
 * [Son Anagramas](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/areAnagrams.js)
+* [Son Palíndromos](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/arePalindromes.js)
 * [Combinación de Cuerdas de Fuerza Bruta](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
 * [Más Largo Subcadena Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubstring.js)
 * [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)

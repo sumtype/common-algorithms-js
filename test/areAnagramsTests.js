@@ -12,7 +12,7 @@ const expect = require('chai').expect
 const areAnagrams = require(path.join(__dirname, '..', 'algorithms', 'areAnagrams'))
 
 // Test
-describe('Are Anagrams Algorithm: bezierCurve(points)', () => {
+describe('Are Anagrams Algorithm: areAnagrams(strings)', () => {
   it('Should return the correct boolean depending on whether the input array of strings are anagrams of one another.', () => {
     expect(areAnagrams(['acb', 'bac', 'cab'])).to.eql(true)
     expect(areAnagrams(['ab', 'bac', 'cab'])).to.eql(false)

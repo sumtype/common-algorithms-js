@@ -45,6 +45,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 ### String
 
 * [Are Anagrams](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/areAnagrams.js)
+* [Are Palindromes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/arePalindromes.js)
 * [Boyer-Moore String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
 * [Boyer-Moore-Horspool String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
 * [Brute Force String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
