@@ -4,9 +4,4 @@
 
 'use strict'
 
-module.exports = exports = (s = []) => {
-  if (s.length <= 1 || !s.every(e => e.length === s[0].length)) return false
-  let total = s[0].split('').map(c => c.codePointAt(0)).reduce((a, b) => a + b)
-  for (let i = 1; i < s.length; i++) if (s[i].split('').map(c => c.codePointAt(0)).reduce((a, b) => a + b) !== total) return false
-  return true
-}
+module.exports = exports = (s = []) => s.length <= 1 || !s.every(e => e.length === s[0].length) ? false : s.map(e => e.split('').map(c => c.codePointAt(0)).reduce((a, b) => a + b)).every((e, i, a) => e === a[0])
