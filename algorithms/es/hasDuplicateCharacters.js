@@ -4,6 +4,6 @@
 
 'use strict'
 
-const hasDuplicateCharacters = (s = '', characters = new Set(s)) => characters.size !== s.length
+const hasDuplicateCharacters = (s = '') => (new Set(s)).size !== s.length
 
 export default hasDuplicateCharacters
