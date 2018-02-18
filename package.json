@@ -1,6 +1,6 @@
 {
   "name": "common-algorithms-js",
-  "version": "2.1.7",
+  "version": "2.1.8",
   "description": "Common algorithms implemented in JavaScript.",
   "main": "./es.js",
   "scripts": {
