@@ -1,12 +1,12 @@
 {
   "name": "common-algorithms-js",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Common algorithms implemented in JavaScript.",
   "main": "./es.js",
   "scripts": {
-    "compile-es5": "node_modules/.bin/shx rm -rf ./algorithms/es5 && node_modules/.bin/shx rm -rf ./test/es5 && node_modules/.bin/shx rm -f ./es5.js && node_modules/.bin/babel ./es.js -o ./es5.js --plugins=babel-plugin-transform-es2015-modules-umd --no-comments && node_modules/.bin/babel ./algorithms/es -d ./algorithms/es5 --plugins=babel-plugin-transform-es2015-modules-umd --no-comments && node_modules/.bin/babel ./test/es -d ./test/es5 --no-comments && node_modules/.bin/replace '/es/' '/es5/' ./es5.js -q && node_modules/.bin/replace 'global.es' 'global.algorithms' ./es5.js -q && node_modules/.bin/replace '../../es' '../../es5' ./test/es5 -r -q && node_modules/.bin/replace 'Algorithm:' 'ES5 Algorithm:' ./test/es5 -r -q && node_modules/.bin/standard --fix --global self --global define --global it --global describe",
+    "transpile-es5": "node_modules/.bin/shx rm -rf ./algorithms/es5 && node_modules/.bin/shx rm -rf ./test/es5 && node_modules/.bin/shx rm -f ./es5.js && node_modules/.bin/babel ./es.js -o ./es5.js --plugins=babel-plugin-transform-es2015-modules-umd --no-comments && node_modules/.bin/babel ./algorithms/es -d ./algorithms/es5 --plugins=babel-plugin-transform-es2015-modules-umd --no-comments && node_modules/.bin/babel ./test/es -d ./test/es5 --no-comments && node_modules/.bin/replace '/es/' '/es5/' ./es5.js -q && node_modules/.bin/replace 'global.es' 'global.algorithms' ./es5.js -q && node_modules/.bin/replace '../../es' '../../es5' ./test/es5 -r -q && node_modules/.bin/replace 'Algorithm:' 'ES5 Algorithm:' ./test/es5 -r -q && node_modules/.bin/standard --fix --global self --global define --global it --global describe",
     "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls",
-    "test": "npm run compile-es5 && node_modules/.bin/nyc --require babel-register node_modules/.bin/_mocha ./test/**/*.js"
+    "test": "npm run transpile-es5 && node_modules/.bin/nyc --require babel-register node_modules/.bin/_mocha ./test/**/*.js"
   },
   "repository": {
     "type": "git",
