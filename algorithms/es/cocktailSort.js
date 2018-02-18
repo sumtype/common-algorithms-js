@@ -4,7 +4,9 @@
 
 'use strict'
 
-const cocktailSort = (array = [], sorted = true) => {
+const cocktailSort = (array = []) => {
+  if (array.length === 0) return []
+  let sorted = true
   while (sorted) {
     for (let i = 0; i < array.length - 1; i++) {
       if (array[i] > array[i + 1]) {
@@ -24,7 +26,8 @@ const cocktailSort = (array = [], sorted = true) => {
   return array
 }
 
-const swapIndicies = (array = [], index = 0, direction = 0, temp = array[index]) => {
+const swapIndicies = (array, index, direction) => {
+  let temp = array[index]
   array[index] = array[index + direction]
   array[index + direction] = temp
   return array

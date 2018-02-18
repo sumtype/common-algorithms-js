@@ -15,11 +15,15 @@ describe('Boyer-Moore-Horspool String Match Algorithm: boyerMooreHorspoolStringM
     expect(boyerMooreHorspoolStringMatch('test', 'est')).to.eql(1)
     expect(boyerMooreHorspoolStringMatch('teststst', 'st')).to.eql(2)
     expect(boyerMooreHorspoolStringMatch('teststst', 't')).to.eql(0)
+    expect(boyerMooreHorspoolStringMatch('teststst', 't', 256)).to.eql(0)
   })
-  it('Should return -1 when the given pattern does not exist inside the input string.', () => {
-    expect(boyerMooreHorspoolStringMatch('test', 'xyz')).to.eql(-1)
+  it('Should return null when the given pattern does not exist inside the input string.', () => {
+    expect(boyerMooreHorspoolStringMatch('test', 'xyz')).to.eql(null)
+    expect(boyerMooreHorspoolStringMatch('teststst')).to.eql(null)
+    expect(boyerMooreHorspoolStringMatch('t', '')).to.eql(null)
+    expect(boyerMooreHorspoolStringMatch()).to.eql(null)
   })
-  it('Should return -1 when the given pattern is longer than the input string.', () => {
-    expect(boyerMooreHorspoolStringMatch('test', 'xyzsda')).to.eql(-1)
+  it('Should return null when the given pattern is longer than the input string.', () => {
+    expect(boyerMooreHorspoolStringMatch('test', 'xyzsda')).to.eql(null)
   })
 })

@@ -4,8 +4,11 @@
 
 'use strict'
 
-const binarySearch = (input = [], value = null, bottom = 0, top = input.length - 1, index = null) => {
+const binarySearch = (input = [], value = null) => {
   if (input.length === 0) return null
+  let bottom = 0
+  let top = input.length - 1
+  let index = null
   do {
     index = parseInt((bottom + top) / 2)
     if (value < input[index]) top = index - 1

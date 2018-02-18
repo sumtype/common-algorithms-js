@@ -16,4 +16,7 @@ describe('Counting Sort Algorithm: countingSort(array)', () => {
     expect(countingSort([5, 8, 6, 7, 4, 1, 2, 3]).toString()).to.eql([1, 2, 3, 4, 5, 6, 7, 8].toString())
     expect(countingSort([1, 2, 3, 4, 5, 6, 7, 8]).toString()).to.eql([1, 2, 3, 4, 5, 6, 7, 8].toString())
   })
+  it('Should return an empty array when no input array is provided.', () => {
+    expect(countingSort().toString()).to.eql([].toString())
+  })
 })

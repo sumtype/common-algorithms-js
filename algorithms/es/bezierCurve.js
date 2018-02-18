@@ -5,10 +5,15 @@
 
 'use strict'
 
-const bezierCurve = (points = [], c = [1]) => {
+const bezierCurve = (points = []) => {
+  let c = [1]
   const curve = {
     controlPoints: [],
-    get: function (pointOnCurve, res = {x: 0, y: 0}, a = 1, b = 1, c = []) {
+    get: function (pointOnCurve) {
+      let res = {x: 0, y: 0}
+      let a = 1
+      let b = 1
+      let c = []
       for (let i = 0; i < this.controlPoints.length; ++i) {
         c.push(a)
         a *= pointOnCurve

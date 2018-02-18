@@ -4,7 +4,12 @@
 
 'use strict'
 
-const countingSort = (array = [], min = 0, max = 0, val = 0, counts = null) => {
+const countingSort = (array = []) => {
+  if (array.length === 0) return []
+  let min = 100000000000000000000000000000
+  let max = 0
+  let val = 0
+  let counts = null
   for (let i = 0; i < array.length; i++) {
     if (min > array[i]) min = array[i]
     else if (max < array[i]) max = array[i]

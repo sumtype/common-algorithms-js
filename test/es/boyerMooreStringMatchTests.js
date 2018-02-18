@@ -15,10 +15,12 @@ describe('Boyer-Moore String Match Algorithm: boyerMooreStringMatch(input, patte
     expect(boyerMooreStringMatch('test', 'est')).to.eql(1)
     expect(boyerMooreStringMatch('teststst', 'st')).to.eql(2)
   })
-  it('Should return -1 when the given pattern does not exist inside the input string.', () => {
-    expect(boyerMooreStringMatch('test', 'xyz')).to.eql(-1)
+  it('Should return null when the given pattern does not exist inside the input string.', () => {
+    expect(boyerMooreStringMatch('test', 'xyz')).to.eql(null)
+    expect(boyerMooreStringMatch('test')).to.eql(null)
+    expect(boyerMooreStringMatch()).to.eql(null)
   })
-  it('Should return -1 when the given pattern is longer than the input string.', () => {
-    expect(boyerMooreStringMatch('test', 'xyzsda')).to.eql(-1)
+  it('Should return null when the given pattern is longer than the input string.', () => {
+    expect(boyerMooreStringMatch('test', 'xyzsda')).to.eql(null)
   })
 })

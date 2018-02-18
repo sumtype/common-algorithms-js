@@ -7,8 +7,11 @@
 
 'use strict'
 
-const bucketSort = (input = [null], bucketSize = 1, min = input[0], max = input[0], output = []) => {
+const bucketSort = (input = [null], bucketSize = 1) => {
   if (input[0] === null) return []
+  let min = input[0]
+  let max = input[0]
+  let output = []
   for (let i = 1; i < input.length; i++) {
     if (input[i] < min) min = input[i]
     if (input[i] > max) max = input[i]
@@ -24,7 +27,7 @@ const bucketSort = (input = [null], bucketSize = 1, min = input[0], max = input[
   return output
 }
 
-function insertionSort (input = []) {
+function insertionSort (input) {
   for (let i = 0, index = i; i < input.length; i++, index = i) {
     while (index > 0 && input[index] < input[index - 1]) {
       let swap = input[index]

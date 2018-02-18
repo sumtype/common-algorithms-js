@@ -5,6 +5,7 @@
 'use strict'
 
 const bubbleSort = (input = null) => {
+  if (input === null) return input
   for (let i = 0, index = i; i < input.length; i++, index = i) {
     for (let j = i + 1; j < input.length; j++) if (input[index] > input[j]) index = j
     if (index !== i) {

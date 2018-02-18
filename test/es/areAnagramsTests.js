@@ -16,6 +16,7 @@ describe('Are Anagrams Algorithm: areAnagrams(strings)', () => {
     expect(areAnagrams(['cab', 'bca', 'abc', 'bac', 'cba', 'acb'])).to.eql(true)
     expect(areAnagrams(['cab', 'bca', 'bac', 'cba', 'acd'])).to.eql(false)
     expect(areAnagrams([])).to.eql(false)
+    expect(areAnagrams()).to.eql(false)
     expect(areAnagrams(['cab'])).to.eql(false)
     expect(areAnagrams(['cb', 'bc'])).to.eql(true)
   })
