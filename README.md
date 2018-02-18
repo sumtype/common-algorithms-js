@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![npm](https://img.shields.io/npm/dt/common-algorithms-js.svg)](https://www.npmjs.com/package/common-algorithms-js)
 
-Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) testing.  Uses [Babel](https://babeljs.io/) and [UMD](https://github.com/umdjs/umd) to compile algorithm modules from ES6+ to ES5.  Test coverage reports are provided by [nyc](https://github.com/istanbuljs/nyc).  All JavaScript code follows [JavaScript Standard Style](https://standardjs.com/) guidelines.
+Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) testing.  Uses [Babel](https://babeljs.io/) and [UMD](https://github.com/umdjs/umd) to transpile algorithm modules from ES6+ to ES5.  Test coverage reports are provided by [nyc](https://github.com/istanbuljs/nyc).  All JavaScript code follows [JavaScript Standard Style](https://standardjs.com/) guidelines.  README.md translations are provided in the [locales](https://github.com/sumtype/common-algorithms-js/tree/master/locales) directory and translated with Google Translate.  Currently [Spanish](https://github.com/sumtype/common-algorithms-js/tree/master/locales/es) is available.  [Contributions](https://github.com/sumtype/common-algorithms-js/blob/master/CONTRIBUTING.md) are welcome!  Follow the guidelines.
 
 ### Array
 
@@ -51,6 +51,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 * [Brute Force String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
 * [Damerau-Levenshtein Distance](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
 * [Hamming Distance](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/hammingDistance.js)
+* [Has Duplicate Characters](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/hasDuplicateCharacters.js)
 * [Knuth-Morris-Pratt String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
 * [Levenshtein Distance](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
 * [Longest Common Subsequence](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
@@ -151,16 +152,16 @@ or
 
 `yarn test`
 
-When running `npm test` or `yarn test` all the algorithms, tests, and "./es5.js" file are compiled based on their corresponding ES6+ files.  This way when running your tests not only are your ES6+ algorithms tested in an ES6+ context, but your compiled ES5 algorithms are tested in compiled ES5 test contexts.  Since modules in tests are loaded via "./es.js" or the compiled "./es5.js" file the export files themselves are tested too.  In addition, [standard](https://www.npmjs.com/package/standard) is run to ensure all ES6+/ES5 code is style compliant and the test breaks if there are issues.
+When running `npm test` or `yarn test` all the algorithms, tests, and "./es5.js" file are transpiled based on their corresponding ES6+ files.  This way when running your tests not only are your ES6+ algorithms tested in an ES6+ context, but your transpiled ES5 algorithms are tested in transpiled ES5 test contexts.  Since modules in tests are loaded via "./es.js" or the transpiled "./es5.js" file the export files themselves are tested too.  In addition, [standard](https://www.npmjs.com/package/standard) is run to ensure all ES6+/ES5 code is style compliant and the test breaks if there are issues.
 
 This repository uses [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) for deployment testing on Node.js versions 8.9.x and 9.4.x.  Test coverage is reported by [Coveralls](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master).
 
-## Compiling ES5 Algorithms
+## Transpiling ES5 Algorithms
 
-You can also compile the ES5 versions of tests and algorithms manually.  To do so, run:
+You can also transpile the ES5 versions of tests and algorithms manually.  To do so, run:
 
-`npm run compile-es5`
+`npm run transpile-es5`
 
 or
 
-`yarn compile-es5`
+`yarn transpile-es5`

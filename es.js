@@ -46,6 +46,7 @@ import boyerMooreHorspoolStringMatch from './algorithms/es/boyerMooreHorspoolStr
 import bruteForceStringMatch from './algorithms/es/bruteForceStringMatch'
 import damerauLevenshteinDistance from './algorithms/es/damerauLevenshteinDistance'
 import hammingDistance from './algorithms/es/hammingDistance'
+import hasDuplicateCharacters from './algorithms/es/hasDuplicateCharacters'
 import knuthMorrisPrattStringMatch from './algorithms/es/knuthMorrisPrattStringMatch'
 import levenshteinDistance from './algorithms/es/levenshteinDistance'
 import longestCommonSubsequence from './algorithms/es/longestCommonSubsequence'
@@ -59,7 +60,7 @@ const array = { binarySearch, bubbleSort, bucketSort, cocktailSort, countingSort
 const geometry = { bezierCurve, rayCasting }
 const graph = { breadthFirstSearch, depthFirstSearch }
 const math = { fibonacciNumber, isPrime, powerSet, primeFactors, sieveOfEratosthenes }
-const string = { areAnagrams, arePalindromes, boyerMooreStringMatch, boyerMooreHorspoolStringMatch, bruteForceStringMatch, damerauLevenshteinDistance, hammingDistance, knuthMorrisPrattStringMatch, levenshteinDistance, longestCommonSubsequence, longestCommonSubstring, matchingDelimiters, rabinKarpStringMatch, sorensenDiceCoefficient }
+const string = { areAnagrams, arePalindromes, boyerMooreStringMatch, boyerMooreHorspoolStringMatch, bruteForceStringMatch, damerauLevenshteinDistance, hammingDistance, hasDuplicateCharacters, knuthMorrisPrattStringMatch, levenshteinDistance, longestCommonSubsequence, longestCommonSubstring, matchingDelimiters, rabinKarpStringMatch, sorensenDiceCoefficient }
 
 // Algorithm Exports
 export default { array, geometry, graph, math, string }
@@ -68,5 +69,5 @@ export {
   geometry, bezierCurve, rayCasting,
   graph, breadthFirstSearch, depthFirstSearch,
   math, fibonacciNumber, isPrime, powerSet, primeFactors, sieveOfEratosthenes,
-  string, areAnagrams, arePalindromes, boyerMooreStringMatch, boyerMooreHorspoolStringMatch, bruteForceStringMatch, damerauLevenshteinDistance, hammingDistance, knuthMorrisPrattStringMatch, levenshteinDistance, longestCommonSubsequence, longestCommonSubstring, matchingDelimiters, rabinKarpStringMatch, sorensenDiceCoefficient
+  string, areAnagrams, arePalindromes, boyerMooreStringMatch, boyerMooreHorspoolStringMatch, bruteForceStringMatch, damerauLevenshteinDistance, hammingDistance, hasDuplicateCharacters, knuthMorrisPrattStringMatch, levenshteinDistance, longestCommonSubsequence, longestCommonSubstring, matchingDelimiters, rabinKarpStringMatch, sorensenDiceCoefficient
 }
