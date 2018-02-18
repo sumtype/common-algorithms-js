@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { boyerMooreHorspoolStringMatch } from '../../es6'
+import { boyerMooreHorspoolStringMatch } from '../../es'
 
 const expect = chai.expect
 

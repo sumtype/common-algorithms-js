@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { rayCasting } from '../../es6'
+import { rayCasting } from '../../es'
 
 const expect = chai.expect
 

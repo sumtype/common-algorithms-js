@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { cocktailSort } from '../../es6'
+import { cocktailSort } from '../../es'
 
 const expect = chai.expect
 

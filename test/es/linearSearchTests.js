@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { linearSearch } from '../../es6'
+import { linearSearch } from '../../es'
 
 const expect = chai.expect
 

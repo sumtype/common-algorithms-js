@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![npm](https://img.shields.io/npm/dt/common-algorithms-js.svg)](https://www.npmjs.com/package/common-algorithms-js)
 
-Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) testing.
+Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/) testing.  Uses [Babel](https://babeljs.io/) and [UMD](https://github.com/umdjs/umd) to compile algorithm modules from ES6+ to ES5.  Test coverage reports are provided by [nyc](https://github.com/istanbuljs/nyc).  All JavaScript code follows [JavaScript Standard Style](https://standardjs.com/) guidelines.
 
 ### Array
 
@@ -59,9 +59,75 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 * [Rabin-Karp String Match](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
 * [Sørensen-Dice Coefficient](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensenDiceCoefficient.js)
 
+## Usage
+
+To install the algorithms for use in your project run:
+
+`yarn add common-algorithms-js`
+
+or if you don't have Yarn installed, run:
+
+`npm i common-algorithms-js`
+
+Once you've downloaded the library, you can start using it in your project like this:
+
+**Using require()**
+
+`var algorithms = require('common-algorithms-js/es5').default`
+
+or if you only want a specific algorithm (the Bezier Curve algorithm for example):
+
+`var bezierCurve = require('common-algorithms-js/es5').bezierCurve`
+
+or if you only want a specific category of algorithms (string algorithms for example):
+
+`var stringAlgorithms = require('common-algorithms-js/es5').string`
+
+**Using ES6 Import/Export**
+
+`import * as algorithms from 'common-algorithms-js'`
+
+or if you only want a specific algorithm (the Fibonacci Number algorithm for example):
+
+`import { fibonacciNumber } from 'common-algorithms-js'`
+
+or if you only want a specific category of algorithms (math algorithms for example):
+
+`import { math } from 'common-algorithms-js'`
+
+The default export returns an object that looks something like this:
+
+```
+{
+  array: {
+    binarySearch: function...,
+    bubbleSort: function...,
+    ...
+  },
+  geometry: {
+    bezierCurve: function...,
+    ...
+  },
+  graph: {
+    breadthFirstSearch: function...,
+    ...
+  },
+  math: {
+    fibonacciNumber: function...,
+    ...
+  },
+  string: {
+    areAnagrams: function...,
+    ...
+  },
+}
+```
+
+it contains all the algorithms available in the library.
+
 ## Testing
 
-To run the tests yourself you'll need to download the project and install its node module dependencies via [npm](https://www.npmjs.com/).  So, if you haven't already installed [Node.js](https://nodejs.org/) and npm for use on your command line hop over to the Node.js website and follow their download and installation instructions.  Once you have Node.js and npm installed, clone the project onto your computer using the following command in your terminal/command prompt/console:
+To run the tests yourself you'll need to download the project and install its node module dependencies via [yarn](https://yarnpkg.com/en/) or [npm](https://www.npmjs.com/).  So, if you haven't already installed [Node.js](https://nodejs.org/) and npm or yarn for use on your command line hop over to the [NVM](https://github.com/creationix/nvm) repository to get setup with the Node.js version you'd like to work with.  Once you have Node.js and npm installed, clone the project onto your computer using the following command in your terminal/command prompt/console:
 
 `git clone https://github.com/sumtype/common-algorithms-js.git`
 
@@ -69,12 +135,32 @@ To run the tests yourself you'll need to download the project and install its no
 
 `cd common-algorithms-js`
 
-Next, install the project's node module dependencies from npm.  Do so by entering this command:
+Next, install the project's node module dependencies from npm or yarn.  Do so by entering this command:
 
-`npm install`
+`npm i`
+
+or this command:
+
+`yarn`
 
 Once all the dependencies are installed you'll be ready to run the tests.  Enter the following command to run them:
 
-`npm run local-test`
+`npm test`
 
-This repository uses [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) for deployment testing on Node.js versions 8.9.x and 9.4.x.
+or
+
+`yarn test`
+
+When running `npm test` or `yarn test` all the algorithms, tests, and "./es5.js" file are compiled based on their corresponding ES6+ files.  This way when running your tests not only are your ES6+ algorithms tested in an ES6+ context, but your compiled ES5 algorithms are tested in compiled ES5 test contexts.  Since modules in tests are loaded via "./es.js" or the compiled "./es5.js" file the export files themselves are tested too.  In addition, [standard](https://www.npmjs.com/package/standard) is run to ensure all ES6+/ES5 code is style compliant and the test breaks if there are issues.
+
+This repository uses [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js) for deployment testing on Node.js versions 8.9.x and 9.4.x.  Test coverage is reported by [Coveralls](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master).
+
+## Compiling ES5 Algorithms
+
+You can also compile the ES5 versions of tests and algorithms manually.  To do so, run:
+
+`npm run compile-es5`
+
+or
+
+`yarn compile-es5`

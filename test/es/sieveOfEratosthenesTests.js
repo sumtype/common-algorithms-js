@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { sieveOfEratosthenes } from '../../es6'
+import { sieveOfEratosthenes } from '../../es'
 
 const expect = chai.expect
 

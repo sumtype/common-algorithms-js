@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { sleepSort } from '../../es6'
+import { sleepSort } from '../../es'
 
 const expect = chai.expect
 

@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { fibonacciNumber } from '../../es6'
+import { fibonacciNumber } from '../../es'
 
 const expect = chai.expect
 

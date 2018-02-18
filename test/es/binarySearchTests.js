@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { binarySearch } from '../../es6'
+import { binarySearch } from '../../es'
 
 const expect = chai.expect
 

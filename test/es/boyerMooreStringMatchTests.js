@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { boyerMooreStringMatch } from '../../es6'
+import { boyerMooreStringMatch } from '../../es'
 
 const expect = chai.expect
 

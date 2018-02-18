@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { sorensenDiceCoefficient } from '../../es6'
+import { sorensenDiceCoefficient } from '../../es'
 
 const expect = chai.expect
 

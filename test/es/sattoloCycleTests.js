@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { sattoloCycle } from '../../es6'
+import { sattoloCycle } from '../../es'
 
 const expect = chai.expect
 

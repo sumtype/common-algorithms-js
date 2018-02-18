@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { depthFirstSearch } from '../../es6'
+import { depthFirstSearch } from '../../es'
 
 const expect = chai.expect
 

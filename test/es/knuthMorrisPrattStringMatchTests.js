@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { knuthMorrisPrattStringMatch } from '../../es6'
+import { knuthMorrisPrattStringMatch } from '../../es'
 
 const expect = chai.expect
 

@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { isPrime } from '../../es6'
+import { isPrime } from '../../es'
 
 const expect = chai.expect
 

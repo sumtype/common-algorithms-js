@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { bubbleSort } from '../../es6'
+import { bubbleSort } from '../../es'
 
 const expect = chai.expect
 

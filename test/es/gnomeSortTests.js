@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { gnomeSort } from '../../es6'
+import { gnomeSort } from '../../es'
 
 const expect = chai.expect
 

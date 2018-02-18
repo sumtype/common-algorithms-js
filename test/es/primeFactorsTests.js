@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { primeFactors } from '../../es6'
+import { primeFactors } from '../../es'
 
 const expect = chai.expect
 

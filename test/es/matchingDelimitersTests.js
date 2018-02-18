@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { matchingDelimiters } from '../../es6'
+import { matchingDelimiters } from '../../es'
 
 const expect = chai.expect
 

@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { longestCommonSubstring } from '../../es6'
+import { longestCommonSubstring } from '../../es'
 
 const expect = chai.expect
 

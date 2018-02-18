@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { bruteForceStringMatch } from '../../es6'
+import { bruteForceStringMatch } from '../../es'
 
 const expect = chai.expect
 

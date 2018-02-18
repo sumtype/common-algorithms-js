@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { rabinKarpStringMatch } from '../../es6'
+import { rabinKarpStringMatch } from '../../es'
 
 const expect = chai.expect
 

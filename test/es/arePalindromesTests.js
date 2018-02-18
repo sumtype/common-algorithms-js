@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { arePalindromes } from '../../es6'
+import { arePalindromes } from '../../es'
 
 const expect = chai.expect
 

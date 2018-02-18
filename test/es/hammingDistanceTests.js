@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { hammingDistance } from '../../es6'
+import { hammingDistance } from '../../es'
 
 const expect = chai.expect
 

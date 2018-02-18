@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { reservoirSampling } from '../../es6'
+import { reservoirSampling } from '../../es'
 
 const expect = chai.expect
 

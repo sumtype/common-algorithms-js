@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { powerSet } from '../../es6'
+import { powerSet } from '../../es'
 
 const expect = chai.expect
 

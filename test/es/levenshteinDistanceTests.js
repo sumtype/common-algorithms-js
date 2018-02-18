@@ -4,7 +4,7 @@
 import chai from 'chai'
 
 // Algorithm
-import { levenshteinDistance } from '../../es6'
+import { levenshteinDistance } from '../../es'
 
 const expect = chai.expect
 
