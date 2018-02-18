@@ -6,58 +6,58 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 
 ### Colección
 
-* [Selección Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/selectionSort.js)
-* [Ordenamiento de Burbuja](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bubbleSort.js)
-* [Ordenamiento de Cóctel](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/cocktailSort.js)
-* [Búsqueda Lineal](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/linearSearch.js)
-* [Combinar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/mergeSort.js)
-* [Ordenación Rápida](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/quickSort.js)
-* [Búsqueda Binaria](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/binarySearch.js)
-* [Ordenamiento por Inserción](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/insertionSort.js)
-* [Clasificación del Cucharón](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bucketSort.js)
-* [Clasificación de Shell](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/shellSort.js)
-* [Contar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/countingSort.js)
-* [Ordenar Gnomo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/gnomeSort.js)
-* [Clase de Radix](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/radixSort.js)
-* [Ordenar Dormir](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sleepSort.js)
-* [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/durstenfeldShuffle.js)
-* [Sattolo Ciclo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sattoloCycle.js)
-* [Depósito Muestreo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/reservoirSampling.js)
+* [Selección Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/selectionSort.js)
+* [Ordenamiento de Burbuja](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/bubbleSort.js)
+* [Ordenamiento de Cóctel](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/cocktailSort.js)
+* [Búsqueda Lineal](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/linearSearch.js)
+* [Combinar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/mergeSort.js)
+* [Ordenación Rápida](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/quickSort.js)
+* [Búsqueda Binaria](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/binarySearch.js)
+* [Ordenamiento por Inserción](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/insertionSort.js)
+* [Clasificación del Cucharón](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/bucketSort.js)
+* [Clasificación de Shell](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/shellSort.js)
+* [Contar Ordenar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/countingSort.js)
+* [Ordenar Gnomo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/gnomeSort.js)
+* [Clase de Radix](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/radixSort.js)
+* [Ordenar Dormir](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sleepSort.js)
+* [Durstenfeld Barajar (a.k.a. Knuth Barajar)](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/durstenfeldShuffle.js)
+* [Sattolo Ciclo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sattoloCycle.js)
+* [Depósito Muestreo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/reservoirSampling.js)
 
 ### Cuerda
 
-* [Son Anagramas](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/areAnagrams.js)
-* [Son Palíndromos](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/arePalindromes.js)
-* [Combinación de Cuerdas de Fuerza Bruta](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bruteForceStringMatch.js)
-* [Más Largo Subcadena Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubstring.js)
-* [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/longestCommonSubsequence.js)
-* [Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/levenshteinDistance.js)
-* [Damerau-Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/damerauLevenshteinDistance.js)
-* [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sorensenDiceCoefficient.js)
-* [Knuth-Morris-Pratt Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/knuthMorrisPrattStringMatch.js)
-* [Rabin-Karp Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rabinKarpStringMatch.js)
-* [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreStringMatch.js)
-* [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/boyerMooreHorspoolStringMatch.js)
-* [Hamming Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/hammingDistance.js)
-* [Delimitadores a Juego](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/matchingDelimiters.js)
+* [Son Anagramas](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/areAnagrams.js)
+* [Son Palíndromos](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/arePalindromes.js)
+* [Combinación de Cuerdas de Fuerza Bruta](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/bruteForceStringMatch.js)
+* [Más Largo Subcadena Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/longestCommonSubstring.js)
+* [Más Larga Subsecuencia Común](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/longestCommonSubsequence.js)
+* [Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/levenshteinDistance.js)
+* [Damerau-Levenshtein Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/damerauLevenshteinDistance.js)
+* [Sørensen-Dice Coeficiente](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sorensenDiceCoefficient.js)
+* [Knuth-Morris-Pratt Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/knuthMorrisPrattStringMatch.js)
+* [Rabin-Karp Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/rabinKarpStringMatch.js)
+* [Boyer-Moore Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/boyerMooreStringMatch.js)
+* [Boyer-Moore-Horspool Cadena Igualar](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/boyerMooreHorspoolStringMatch.js)
+* [Hamming Distancia](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/hammingDistance.js)
+* [Delimitadores a Juego](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/matchingDelimiters.js)
 
 ### Grafico
 
-* [Profundidad Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/depthFirstSearch.js)
-* [Amplitud Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/breadthFirstSearch.js)
+* [Profundidad Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/depthFirstSearch.js)
+* [Amplitud Primera Búsqueda](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/breadthFirstSearch.js)
 
 ### Geometría
 
-* [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/rayCasting.js)
-* [Bezier Curva](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/bezierCurve.js)
+* [Ray-Casting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/rayCasting.js)
+* [Bezier Curva](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/bezierCurve.js)
 
 ### Mates
 
-* [Fibonacci Número](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/fibonacciNumber.js)
-* [Es Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/isPrime.js)
-* [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/sieveOfEratosthenes.js)
-* [Factores Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/primeFactors.js)
-* [Set de Poder](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/powerSet.js)
+* [Fibonacci Número](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/fibonacciNumber.js)
+* [Es Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/isPrime.js)
+* [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sieveOfEratosthenes.js)
+* [Factores Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/primeFactors.js)
+* [Set de Poder](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/powerSet.js)
 
 ## Pruebas
 
