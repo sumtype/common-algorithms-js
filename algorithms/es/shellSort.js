@@ -4,7 +4,9 @@
 
 'use strict'
 
-const shellSort = (array = [], gap = array.length) => {
+const shellSort = (array = null) => {
+  if (array === null) return null
+  let gap = array.length
   do {
     for (let i = gap, value = array[i], j = i; i < array.length; i++, value = array[i], j = i) {
       while (j >= gap && array[j - gap] > value) {

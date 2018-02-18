@@ -19,11 +19,11 @@
   var bucketSort = function bucketSort () {
     var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [null]
     var bucketSize = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1
-    var min = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : input[0]
-    var max = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : input[0]
-    var output = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : []
 
     if (input[0] === null) return []
+    var min = input[0]
+    var max = input[0]
+    var output = []
     for (var i = 1; i < input.length; i++) {
       if (input[i] < min) min = input[i]
       if (input[i] > max) max = input[i]
@@ -43,9 +43,7 @@
     return output
   }
 
-  function insertionSort () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-
+  function insertionSort (input) {
     for (var i = 0, index = i; i < input.length; i++, index = i) {
       while (index > 0 && input[index] < input[index - 1]) {
         var swap = input[index]

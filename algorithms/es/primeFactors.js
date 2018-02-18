@@ -5,7 +5,10 @@
 
 'use strict'
 
-const primeFactors = (n = 0, a = [], s = 6) => {
+const primeFactors = (n = null) => {
+  if (n === null) return null
+  let a = []
+  let s = 6
   n = Math.abs(n)
   while (n > 1 && n % 2 === 0) n = addFactor(n, a, 2)
   while (n > 2 && n % 3 === 0) n = addFactor(n, a, 3)
@@ -19,7 +22,7 @@ const primeFactors = (n = 0, a = [], s = 6) => {
   return a
 }
 
-const addFactor = (n = 0, a = [], n2 = 1) => {
+const addFactor = (n, a, n2) => {
   a.push(n2)
   n /= n2
   return n

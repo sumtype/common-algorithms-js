@@ -4,13 +4,14 @@
 
 'use strict'
 
-const rayCasting = (shape = [], point = null, count = 0) => {
-  if (shape.length === 0 || point === null) return false
+const rayCasting = (shape = null, point = null) => {
+  if (shape === null || point === null) return null
+  let count = 0
   for (var i = 0; i < shape.length; i++) if (intersects(shape[i], shape[(i + 1) % shape.length], point.x, point.y)) ++count
   return !!(count % 2)
 }
 
-const intersects = (a = null, b = null, x = null, y = null) => {
+const intersects = (a, b, x, y) => {
   if (a.y <= b.y) {
     if (y <= a.y || y > b.y) return false
     if (x >= a.x && x >= b.x) return false

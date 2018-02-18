@@ -20,4 +20,7 @@ describe('Is Prime ES5 Algorithm: isPrime(number)', function () {
     expect((0, _es.isPrime)(4)).to.eql(false)
     expect((0, _es.isPrime)(97)).to.eql(true)
   })
+  it('Should return null when no input is provided.', function () {
+    expect((0, _es.isPrime)()).to.eql(null)
+  })
 })

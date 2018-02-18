@@ -4,7 +4,11 @@
 
 'use strict'
 
-const matchingDelimiters = (s, m = {'[': ']', '{': '}'}, stack = [], opening = [], closing = []) => {
+const matchingDelimiters = (s = null, m = {'[': ']', '{': '}'}) => {
+  if (s === null) return null
+  let stack = []
+  let opening = []
+  let closing = []
   for (let k in m) {
     opening.push(k)
     closing.push(m[k])

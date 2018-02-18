@@ -15,4 +15,7 @@ describe('Prime Factors ES5 Algorithm: primeFactors(number)', function () {
     expect((0, _es.primeFactors)(18).toString()).to.eql([2, 3, 3].toString())
     expect((0, _es.primeFactors)(600851475143).toString()).to.eql([71, 839, 1471, 6857].toString())
   })
+  it('Should return null if no input integer is provided.', function () {
+    expect((0, _es.primeFactors)()).to.eql(null)
+  })
 })

@@ -17,4 +17,7 @@ describe('Counting Sort ES5 Algorithm: countingSort(array)', function () {
     expect((0, _es.countingSort)([5, 8, 6, 7, 4, 1, 2, 3]).toString()).to.eql([1, 2, 3, 4, 5, 6, 7, 8].toString())
     expect((0, _es.countingSort)([1, 2, 3, 4, 5, 6, 7, 8]).toString()).to.eql([1, 2, 3, 4, 5, 6, 7, 8].toString())
   })
+  it('Should return an empty array when no input array is provided.', function () {
+    expect((0, _es.countingSort)().toString()).to.eql([].toString())
+  })
 })

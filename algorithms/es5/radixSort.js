@@ -29,7 +29,11 @@
     }
   }
 
-  var radixSort = function radixSort (input, base) {
+  var radixSort = function radixSort () {
+    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var base = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 10
+
+    if (input === null) return null
     for (var i = 0; i < Math.round(Math.log(Math.max.apply(Math, _toConsumableArray(input.map(function (n) {
       return Math.abs(n)
     })))) / Math.log(base)) + 1; i++) {
@@ -37,18 +41,15 @@
     } return merge(splitBySign(input))
   }
 
-  var merge = function merge () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var output = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : []
-
+  var merge = function merge (array) {
+    var output = []
     for (var i = 0; i < array.length; i++) {
       output = output.concat(array[i])
     } return output
   }
 
   var split = function split (array, base, digit) {
-    var buckets = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : []
-
+    var buckets = []
     for (var i = 0; i < base; i++) {
       buckets.push([])
     } for (var _i = 0; _i < array.length; _i++) {
@@ -56,10 +57,8 @@
     } return buckets
   }
 
-  var splitBySign = function splitBySign () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var buckets = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [[], []]
-
+  var splitBySign = function splitBySign (array) {
+    var buckets = [[], []]
     for (var i = 0; i < array.length; i++) {
       array[i] < 0 ? buckets[0].unshift(array[i]) : buckets[1].push(array[i])
     } return buckets

@@ -32,4 +32,7 @@ describe('Sleep Sort ES5 Algorithm: sleepSort(array)', function () {
       done()
     })
   })
+  it('Should return null if the input array is not provided.', function () {
+    expect((0, _es.sleepSort)()).to.eql(null)
+  })
 })

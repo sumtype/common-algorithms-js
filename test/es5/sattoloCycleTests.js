@@ -30,4 +30,7 @@ describe('Sattolo Cycle ES5 Algorithm: sattoloCycle(array)', function () {
     expect((0, _es.sattoloCycle)([]).toString()).to.eql([].toString())
     expect((0, _es.sattoloCycle)(['test']).toString()).to.eql(['test'].toString())
   })
+  it('Should return null if the input array is not provided.', function () {
+    expect((0, _es.sattoloCycle)()).to.eql(null)
+  })
 })

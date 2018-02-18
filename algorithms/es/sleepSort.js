@@ -4,7 +4,12 @@
 
 'use strict'
 
-const sleepSort = (array, cb, negative = [], positive = [], max = Math.max(...array.map(n => Math.abs(n))), min = Math.min(...array)) => {
+const sleepSort = (array = null, cb) => {
+  if (array === null) return null
+  let negative = []
+  let positive = []
+  let max = Math.max(...array.map(n => Math.abs(n)))
+  let min = Math.min(...array)
   for (let i = 0; i < array.length; i++) setTimeout(wake(array[i], max, min, array.length, negative, positive, cb), Math.abs(array[i]) * 3)
 }
 

@@ -18,9 +18,10 @@
   })
   var depthFirstSearch = function depthFirstSearch () {
     var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
-    var reach = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : []
-    var totalConnections = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0
 
+    if (input === null) return null
+    var reach = []
+    var totalConnections = 0
     for (var i = 0; i < input.length; i++) {
       reach[i] = 0
     }search(0, reach, input.length, input)

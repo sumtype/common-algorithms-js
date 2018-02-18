@@ -6,7 +6,8 @@
 
 let input = null
 
-const quickSort = (a = []) => {
+const quickSort = (a = null) => {
+  if (a === null) return null
   input = a
   return sort()
 }

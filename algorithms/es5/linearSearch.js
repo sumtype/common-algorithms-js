@@ -24,8 +24,7 @@
   }
 
   var linearSearch = function linearSearch (array, value) {
-    var output = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -1
-
+    var output = null
     if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
       value = JSON.stringify(value)
       for (var i = 0; i < array.length; i++) {

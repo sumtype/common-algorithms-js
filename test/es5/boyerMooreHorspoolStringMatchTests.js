@@ -16,11 +16,15 @@ describe('Boyer-Moore-Horspool String Match ES5 Algorithm: boyerMooreHorspoolStr
     expect((0, _es.boyerMooreHorspoolStringMatch)('test', 'est')).to.eql(1)
     expect((0, _es.boyerMooreHorspoolStringMatch)('teststst', 'st')).to.eql(2)
     expect((0, _es.boyerMooreHorspoolStringMatch)('teststst', 't')).to.eql(0)
+    expect((0, _es.boyerMooreHorspoolStringMatch)('teststst', 't', 256)).to.eql(0)
   })
-  it('Should return -1 when the given pattern does not exist inside the input string.', function () {
-    expect((0, _es.boyerMooreHorspoolStringMatch)('test', 'xyz')).to.eql(-1)
+  it('Should return null when the given pattern does not exist inside the input string.', function () {
+    expect((0, _es.boyerMooreHorspoolStringMatch)('test', 'xyz')).to.eql(null)
+    expect((0, _es.boyerMooreHorspoolStringMatch)('teststst')).to.eql(null)
+    expect((0, _es.boyerMooreHorspoolStringMatch)('t', '')).to.eql(null)
+    expect((0, _es.boyerMooreHorspoolStringMatch)()).to.eql(null)
   })
-  it('Should return -1 when the given pattern is longer than the input string.', function () {
-    expect((0, _es.boyerMooreHorspoolStringMatch)('test', 'xyzsda')).to.eql(-1)
+  it('Should return null when the given pattern is longer than the input string.', function () {
+    expect((0, _es.boyerMooreHorspoolStringMatch)('test', 'xyzsda')).to.eql(null)
   })
 })

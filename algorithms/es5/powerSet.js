@@ -17,9 +17,10 @@
     value: true
   })
   var powerSet = function powerSet () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var powerSet = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [[]]
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (array === null) return null
+    var powerSet = [[]]
     for (var i = 0; i < array.length; i++) {
       for (var j = 0, length = powerSet.length; j < length; j++) {
         powerSet.push(powerSet[j].concat(array[i]))

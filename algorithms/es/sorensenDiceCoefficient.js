@@ -5,7 +5,9 @@
 
 'use strict'
 
-const sorensenDiceCoefficient = (s1 = '', s2 = '', intersection = 0) => {
+const sorensenDiceCoefficient = (s1 = null, s2 = null) => {
+  if (s1 === null || s2 === null) return null
+  let intersection = 0
   if (s1.length < 1 || s2.length < 1) return 0
   for (let i = 0; i < s1.length - 1; i++) {
     for (let j = 0; j < s2.length - 1; j++) {

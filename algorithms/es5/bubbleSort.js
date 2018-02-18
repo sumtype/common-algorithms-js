@@ -19,6 +19,7 @@
   var bubbleSort = function bubbleSort () {
     var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (input === null) return input
     for (var i = 0, index = i; i < input.length; i++, index = i) {
       for (var j = i + 1; j < input.length; j++) {
         if (input[index] > input[j]) index = j

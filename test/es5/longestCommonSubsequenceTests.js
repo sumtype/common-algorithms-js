@@ -15,7 +15,11 @@ describe('Longest Common Subsequence ES5 Algorithm: longestCommonSubsequence(inp
     expect((0, _es.longestCommonSubsequence)('test', 'es')).to.eql('es')
     expect((0, _es.longestCommonSubsequence)('tex', 'esr')).to.eql('e')
   })
-  it('Should return -1 when there are no common substrings in the input strings.', function () {
-    expect((0, _es.longestCommonSubsequence)('test', 'xyz')).to.eql(-1)
+  it('Should return null when there are no common substrings in the input strings.', function () {
+    expect((0, _es.longestCommonSubsequence)('test', 'xyz')).to.eql(null)
+  })
+  it('Should return null when either input string is not specified.', function () {
+    expect((0, _es.longestCommonSubsequence)('test')).to.eql(null)
+    expect((0, _es.longestCommonSubsequence)()).to.eql(null)
   })
 })

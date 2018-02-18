@@ -17,18 +17,18 @@
     value: true
   })
   var sattoloCycle = function sattoloCycle () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var array = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : input.slice()
+    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
-    if (input.length <= 1) return input
+    if (input === null) return null
+    if (input.length === 0) return []
+    var array = input.slice()
     for (var i = array.length - 1; i > 0; i--) {
       array = swapIndicies(array, i, Math.floor(Math.random() * i))
     } return array
   }
 
   var swapIndicies = function swapIndicies (array, index, newIndex) {
-    var temp = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : array[index]
-
+    var temp = array[index]
     array[index] = array[newIndex]
     array[newIndex] = temp
     return array

@@ -18,4 +18,7 @@ describe('Breadth First Search ES5 Algorithm: breadthFirstSearch(input)', functi
   it('Should return false when given a disconncted graph\'s adjacency matrix.', function () {
     expect((0, _es.breadthFirstSearch)([[0, 1, 0, 0], [1, 0, 1, 0], [0, 0, 0, 0], [1, 0, 1, 0]])).to.eql(false)
   })
+  it('Should return false there is no input graph.', function () {
+    expect((0, _es.breadthFirstSearch)()).to.eql(false)
+  })
 })

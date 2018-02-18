@@ -5,9 +5,11 @@
 
 'use strict'
 
-const levenshteinDistance = (s1 = '', s2 = '', matrix = []) => {
-  if (!s1.length) return s2.length
-  if (!s2.length) return s1.length
+const levenshteinDistance = (s1 = null, s2 = null) => {
+  if (s1 === null || s2 === null) return null
+  if (s1.length === 0) return s2.length
+  if (s2.length === 0) return s1.length
+  let matrix = []
   for (let i = 0; i <= s2.length; i++) matrix[i] = [i]
   for (let i = 0; i <= s1.length; i++) matrix[0][i] = i
   for (let i = 1; i <= s2.length; i++) for (let j = 1; j <= s1.length; j++) matrix[i][j] = s2.charAt(i - 1) === s1.charAt(j - 1) ? matrix[i - 1][j - 1] : Math.min(matrix[i - 1][j - 1] + 1, Math.min(matrix[i][j - 1] + 1, matrix[i - 1][j] + 1))

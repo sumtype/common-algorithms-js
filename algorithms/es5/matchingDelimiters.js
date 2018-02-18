@@ -16,12 +16,14 @@
   Object.defineProperty(exports, '__esModule', {
     value: true
   })
-  var matchingDelimiters = function matchingDelimiters (s) {
+  var matchingDelimiters = function matchingDelimiters () {
+    var s = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
     var m = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { '[': ']', '{': '}' }
-    var stack = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : []
-    var opening = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : []
-    var closing = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : []
 
+    if (s === null) return null
+    var stack = []
+    var opening = []
+    var closing = []
     for (var k in m) {
       opening.push(k)
       closing.push(m[k])

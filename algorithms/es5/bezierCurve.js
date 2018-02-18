@@ -18,16 +18,15 @@
   })
   var bezierCurve = function bezierCurve () {
     var points = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var c = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [1]
 
+    var c = [1]
     var curve = {
       controlPoints: [],
       get: function get (pointOnCurve) {
-        var res = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { x: 0, y: 0 }
-        var a = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1
-        var b = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1
-        var c = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : []
-
+        var res = { x: 0, y: 0 }
+        var a = 1
+        var b = 1
+        var c = []
         for (var i = 0; i < this.controlPoints.length; ++i) {
           c.push(a)
           a *= pointOnCurve

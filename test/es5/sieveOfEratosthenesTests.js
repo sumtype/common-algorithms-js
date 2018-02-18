@@ -17,5 +17,6 @@ describe('Sieve of Eratosthenes ES5 Algorithm: sieveOfEratosthenes(n)', function
     expect((0, _es.sieveOfEratosthenes)(2).toString()).to.eql([2].toString())
     expect((0, _es.sieveOfEratosthenes)(3).toString()).to.eql([2, 3].toString())
     expect((0, _es.sieveOfEratosthenes)(100).toString()).to.eql([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97].toString())
+    expect((0, _es.sieveOfEratosthenes)().toString()).to.eql([].toString())
   })
 })

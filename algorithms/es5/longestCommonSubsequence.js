@@ -17,10 +17,11 @@
     value: true
   })
   var longestCommonSubsequence = function longestCommonSubsequence () {
-    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
-    var c = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : []
+    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
 
+    if (s1 === null || s2 === null) return null
+    var c = []
     for (var i = 0; i <= s1.length; i++) {
       c.push([0])
     } for (var _i = 0; _i < s2.length; _i++) {
@@ -34,7 +35,7 @@
       if (s1[n1 - 1] === s2[n2 - 1]) return backTrack(n1 - 1, n2 - 1) + s1[n1 - 1]
       return c[n1][n2 - 1] > c[n1 - 1][n2] ? backTrack(n1, n2 - 1) : backTrack(n1 - 1, n2)
     }(s1.length, s2.length))
-    if (sequence === '') sequence = -1
+    if (sequence === '') sequence = null
     return sequence
   }
 

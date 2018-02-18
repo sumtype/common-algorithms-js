@@ -19,11 +19,11 @@
   var boyerMooreStringMatch = function boyerMooreStringMatch () {
     var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
     var pattern = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
-    var characterTable = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null
-    var offsetTable = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null
-    var j = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : null
 
-    if (pattern.length > input.length || pattern.length === 0) return -1
+    var characterTable = null
+    var offsetTable = null
+    var j = null
+    if (pattern.length > input.length || pattern.length === 0) return null
     characterTable = createCharacterTable(pattern)
     offsetTable = createOffsetTable(pattern)
     for (var i = pattern.length - 1; i < input.length;) {
@@ -31,24 +31,20 @@
         if (j === 0) return i
       }i += Math.ceil(offsetTable[pattern.length - 1 - j], characterTable[input[i]])
     }
-    return -1
+    return null
   }
 
-  var createCharacterTable = function createCharacterTable () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var alphabetSize = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 256
-    var table = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : new Array(alphabetSize).fill(input.length)
-
+  var createCharacterTable = function createCharacterTable (input) {
+    var alphabetSize = 256
+    var table = new Array(alphabetSize).fill(input.length)
     for (var i = 0; i < input.length - 1; i++) {
       table[input[i]] = input.length - 1 - i
     } return table
   }
 
-  var createOffsetTable = function createOffsetTable () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var table = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : []
-    var lastPrefixPosition = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : input.length
-
+  var createOffsetTable = function createOffsetTable (input) {
+    var table = []
+    var lastPrefixPosition = input.length
     for (var i = input.length - 1; i >= 0; i--) {
       if (prefixAt(input, i + 1)) lastPrefixPosition = i + 1
       table[input.length - 1 - i] = lastPrefixPosition - i + input.length - 1
@@ -58,20 +54,14 @@
     } return table
   }
 
-  var prefixAt = function prefixAt () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
-
+  var prefixAt = function prefixAt (input, index) {
     for (var i = index, j = 0; i < input.length; i++, j++) {
       if (input[i] !== input[j]) return false
     } return true
   }
 
-  var getSuffixLength = function getSuffixLength () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
-    var length = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0
-
+  var getSuffixLength = function getSuffixLength (input, index) {
+    var length = 0
     for (var i = index, j = input.length - 1; i >= 0 && input[i] === input[j]; i--, j--) {
       length += 1
     } return length

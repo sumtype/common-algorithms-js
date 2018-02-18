@@ -15,5 +15,10 @@ describe('Levenshtein Distance ES5 Algorithm: levenshteinDistance(input1, input2
     expect((0, _es.levenshteinDistance)('test', '')).to.eql(4)
     expect((0, _es.levenshteinDistance)('tex', 'esr')).to.eql(3)
     expect((0, _es.levenshteinDistance)('text', 'rext')).to.eql(1)
+    expect((0, _es.levenshteinDistance)('', 'rext')).to.eql(4)
+  })
+  it('Should return null if either string input is not specified.', function () {
+    expect((0, _es.levenshteinDistance)()).to.eql(null)
+    expect((0, _es.levenshteinDistance)('')).to.eql(null)
   })
 })

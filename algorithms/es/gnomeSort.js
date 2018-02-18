@@ -4,12 +4,15 @@
 
 'use strict'
 
-const gnomeSort = (array = [], index = 0) => {
+const gnomeSort = (array = null) => {
+  if (array === null) return null
+  let index = 0
   while (index < array.length) index === 0 || array[index - 1] <= array[index] ? index++ : swapIndicies(array, index--)
   return array
 }
 
-const swapIndicies = (array, index, temp = array[index]) => {
+const swapIndicies = (array, index) => {
+  let temp = array[index]
   array[index] = array[--index]
   array[index] = temp
 }

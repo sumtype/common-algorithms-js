@@ -25,4 +25,7 @@ describe('Sattolo Cycle Algorithm: sattoloCycle(array)', () => {
     expect(sattoloCycle([]).toString()).to.eql([].toString())
     expect(sattoloCycle(['test']).toString()).to.eql(['test'].toString())
   })
+  it('Should return null if the input array is not provided.', () => {
+    expect(sattoloCycle()).to.eql(null)
+  })
 })

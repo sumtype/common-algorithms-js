@@ -31,4 +31,7 @@ describe('Sleep Sort Algorithm: sleepSort(array)', () => {
       done()
     })
   })
+  it('Should return null if the input array is not provided.', () => {
+    expect(sleepSort()).to.eql(null)
+  })
 })

@@ -17,17 +17,17 @@
     value: true
   })
   var gnomeSort = function gnomeSort () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (array === null) return null
+    var index = 0
     while (index < array.length) {
       index === 0 || array[index - 1] <= array[index] ? index++ : swapIndicies(array, index--)
     } return array
   }
 
   var swapIndicies = function swapIndicies (array, index) {
-    var temp = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : array[index]
-
+    var temp = array[index]
     array[index] = array[--index]
     array[index] = temp
   }

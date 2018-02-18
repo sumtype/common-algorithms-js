@@ -19,4 +19,7 @@ describe('Is Prime Algorithm: isPrime(number)', () => {
     expect(isPrime(4)).to.eql(false)
     expect(isPrime(97)).to.eql(true)
   })
+  it('Should return null when no input is provided.', () => {
+    expect(isPrime()).to.eql(null)
+  })
 })

@@ -36,10 +36,7 @@
     return matrix[s1.length + 1][s2.length + 1]
   }
 
-  var setupMatrix = function setupMatrix () {
-    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
-
+  var setupMatrix = function setupMatrix (s1, s2) {
     matrix[0] = [s1.length + s2.length]
     for (var i = 0; i <= s1.length; i++) {
       matrix[i + 1] = []
@@ -53,10 +50,7 @@
     return matrix
   }
 
-  var updateMatrix = function updateMatrix () {
-    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
-
+  var updateMatrix = function updateMatrix (s1, s2) {
     for (var i = 1, database = 0; i <= s1.length; i++, database = 0) {
       for (var j = 1, i1 = sd[s2[j - 1]], j1 = database; j <= s2.length; j++, i1 = sd[s2[j - 1]], j1 = database) {
         matrix[i + 1][j + 1] = s1[i - 1] === s2[j - 1] ? matrix[i][j] : matrix[i + 1][j + 1] = Math.min(matrix[i][j], Math.min(matrix[i + 1][j], matrix[i][j + 1])) + 1

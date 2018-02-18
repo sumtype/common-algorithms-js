@@ -17,9 +17,10 @@
     value: true
   })
   var shellSort = function shellSort () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var gap = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : array.length
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (array === null) return null
+    var gap = array.length
     do {
       for (var i = gap, value = array[i], j = i; i < array.length; i++, value = array[i], j = i) {
         while (j >= gap && array[j - gap] > value) {

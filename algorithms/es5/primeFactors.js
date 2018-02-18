@@ -17,10 +17,11 @@
     value: true
   })
   var primeFactors = function primeFactors () {
-    var n = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0
-    var a = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : []
-    var s = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 6
+    var n = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (n === null) return null
+    var a = []
+    var s = 6
     n = Math.abs(n)
     while (n > 1 && n % 2 === 0) {
       n = addFactor(n, a, 2)
@@ -38,11 +39,7 @@
     return a
   }
 
-  var addFactor = function addFactor () {
-    var n = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0
-    var a = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : []
-    var n2 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1
-
+  var addFactor = function addFactor (n, a, n2) {
     a.push(n2)
     n /= n2
     return n

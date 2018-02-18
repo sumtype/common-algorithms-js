@@ -14,4 +14,7 @@ describe('Quick Sort ES5 Algorithm: quickSort(input)', function () {
   it('Should return an array which has been sorted from low to high values when given an array of numbers.', function () {
     expect((0, _es.quickSort)([5, 4, 14, 3, 2, 1]).toString()).to.eql([1, 2, 3, 4, 5, 14].toString())
   })
+  it('Should return null if no input array is provided.', function () {
+    expect((0, _es.quickSort)()).to.eql(null)
+  })
 })

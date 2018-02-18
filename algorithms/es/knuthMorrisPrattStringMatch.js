@@ -1,5 +1,5 @@
 /*
-  A JavaScript module which performs a Knuth-Morris-Pratt string match to determine whether a given value exists within an input string.  If the specified value is found, the index of the value string inside the input string is returned.  If the specified value is not found in the input string -1 is returned.  Slightly modified from an existing JavaScript implementation.
+  A JavaScript module which performs a Knuth-Morris-Pratt string match to determine whether a given value exists within an input string.  If the specified value is found, the index of the value string inside the input string is returned.  If the specified value is not found in the input string null is returned.  Slightly modified from an existing JavaScript implementation.
 
   Copyright (c) 2014 Project Nayuki (MIT License), 2016 James Mason
   Citation: https://www.nayuki.io/page/knuth-morris-pratt-string-matching.
@@ -11,17 +11,18 @@ let input = null
 let pattern = null
 let longestSuffixPrefix = null
 
-const knuthMorrisPrattStringMatch = (userInput = '', stringPattern = '') => {
+const knuthMorrisPrattStringMatch = (userInput = null, stringPattern = null) => {
+  if (userInput === null || stringPattern === null) return null
   input = userInput
   pattern = stringPattern
-  if (pattern.length > input.length || pattern.length === 0) return -1
+  if (pattern.length > input.length || pattern.length === 0) return null
   longestSuffixPrefix = [0]
   for (let i = 1, j = updateLongestSuffixPrefix(longestSuffixPrefix[i - 1], i); i < pattern.length; i++, j = updateLongestSuffixPrefix(longestSuffixPrefix[i - 1], i)) longestSuffixPrefix.push(j)
   for (let i = 0, j = setLongestSuffixPrefix(0, i); i < input.length; i++, j = setLongestSuffixPrefix(j, i)) if (input.charAt(i) === pattern.charAt(j++) && j === pattern.length) return i - (j - 1)
-  return -1
+  return null
 }
 
-const updateLongestSuffixPrefix = (j = 0, i = 0) => {
+const updateLongestSuffixPrefix = (j, i) => {
   while (j > 0 && pattern.charAt(i) !== pattern.charAt(j)) j = longestSuffixPrefix[j - 1]
   if (pattern.charAt(i) === pattern.charAt(j)) j++
   return j

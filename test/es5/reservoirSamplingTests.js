@@ -23,4 +23,8 @@ describe('Reservoir Sampling ES5 Algorithm: reservoirSampling(array, size)', fun
       expect(array.includes(sampledArray[_i])).to.eql(true)
     }expect(array.toString().indexOf(sampledArray.toString().substr(1, sampledArray.toString().length - 1))).to.eql(-1)
   })
+  it('Should return null if either the input array or size are unspecified.', function () {
+    expect((0, _es.reservoirSampling)([])).to.eql(null)
+    expect((0, _es.reservoirSampling)()).to.eql(null)
+  })
 })

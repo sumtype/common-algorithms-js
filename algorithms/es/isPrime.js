@@ -5,7 +5,8 @@
 
 'use strict'
 
-const isPrime = (n = 0) => {
+const isPrime = (n = null) => {
+  if (n === null) return null
   if (n < 2) return false
   for (let i = 2; i <= Math.sqrt(n); ++i) if (n % i === 0) return false
   return true

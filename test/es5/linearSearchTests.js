@@ -20,7 +20,7 @@ describe('Linear Search ES5 Algorithm: linearSearch(input, value)', function () 
     expect((0, _es.linearSearch)([10, undefined], undefined)).to.eql(1)
     expect((0, _es.linearSearch)([10, function () {}], function () {})).to.eql(1)
   })
-  it('Should return -1 when the given value does not exist inside an element of the input array.', function () {
-    expect((0, _es.linearSearch)([10, 9], 8)).to.eql(-1)
+  it('Should return null when the given value does not exist inside an element of the input array.', function () {
+    expect((0, _es.linearSearch)([10, 9], 8)).to.eql(null)
   })
 })

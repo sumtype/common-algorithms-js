@@ -4,7 +4,10 @@
 
 'use strict'
 
-const depthFirstSearch = (input = null, reach = [], totalConnections = 0) => {
+const depthFirstSearch = (input = null) => {
+  if (input === null) return null
+  let reach = []
+  let totalConnections = 0
   for (let i = 0; i < input.length; i++) reach[i] = 0
   search(0, reach, input.length, input)
   for (let i = 0; i < input.length; i++) if (reach[i]) totalConnections += 1

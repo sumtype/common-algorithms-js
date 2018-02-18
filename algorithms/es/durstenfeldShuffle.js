@@ -4,7 +4,9 @@
 
 'use strict'
 
-const durstenfeldShuffle = (input = [], index = input.length) => {
+const durstenfeldShuffle = (input = null) => {
+  if (input === null) return null
+  let index = input.length
   while (index !== 0) {
     let shuffleIndex = Math.floor(Math.random() * index--)
     let swap = input[index]

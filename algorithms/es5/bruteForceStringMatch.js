@@ -20,13 +20,13 @@
     var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
     var pattern = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
 
-    if (pattern.length > input.length) return -1
+    if (pattern.length > input.length || input === '' || pattern === '') return null
     for (var i = 0, index = i; i < input.length; i++, index = i) {
       for (var j = 0; j < pattern.length; j++) {
         index = pattern[j] === input[index] ? index + 1 : null
       } if (index - i === pattern.length) return i
     }
-    return -1
+    return null
   }
 
   exports.default = bruteForceStringMatch

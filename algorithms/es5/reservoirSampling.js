@@ -17,11 +17,11 @@
     value: true
   })
   var reservoirSampling = function reservoirSampling () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
-    var size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0
-    var output = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : array.slice(0, size)
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var size = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
 
-    if (!array.length || size === 0) return []
+    if (array === null || size === null) return null
+    var output = array.slice(0, size)
     for (var i = size, j = Math.floor(Math.random() * (i - 2)) + 1; i < array.length; i++, j = Math.floor(Math.random() * (i - 2)) + 1) {
       if (j <= size) output[j] = array[i]
     } return output

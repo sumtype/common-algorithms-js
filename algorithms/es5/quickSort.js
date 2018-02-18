@@ -19,8 +19,9 @@
   var input = null
 
   var quickSort = function quickSort () {
-    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
+    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (a === null) return null
     input = a
     return sort()
   }

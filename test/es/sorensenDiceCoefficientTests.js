@@ -17,4 +17,8 @@ describe('Sorensen-Dice Coefficient Algorithm: sorensenDiceCoefficient(input1, i
     expect(sorensenDiceCoefficient('text', 'text')).to.eql(1)
     expect(sorensenDiceCoefficient('text', 'rext')).to.eql(0.6666666666666666)
   })
+  it('Should return null if either input string is unspecified.', () => {
+    expect(sorensenDiceCoefficient('text')).to.eql(null)
+    expect(sorensenDiceCoefficient()).to.eql(null)
+  })
 })

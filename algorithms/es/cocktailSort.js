@@ -14,7 +14,6 @@ const cocktailSort = (array = []) => {
         sorted = true
       }
     }
-    if (!sorted) break
     sorted = false
     for (let i = array.length - 1; i > 0; i--) {
       if (array[i - 1] > array[i]) {

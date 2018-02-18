@@ -17,8 +17,9 @@
     value: true
   })
   var selectionSort = function selectionSort () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (array === null) return null
     for (var i = 0, min = i; i < array.length; i++, min = i) {
       for (var j = i; j < array.length; j++) {
         if (array[j] < array[min]) min = j

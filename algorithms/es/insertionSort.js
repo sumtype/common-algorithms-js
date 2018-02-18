@@ -4,7 +4,8 @@
 
 'use strict'
 
-const insertionSort = (array = []) => {
+const insertionSort = (array = null) => {
+  if (array === null) return null
   for (let i = 0, index = i; i < array.length; i++, index = i) {
     while (index > 0 && array[index] < array[index - 1]) {
       let swap = array[index]

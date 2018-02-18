@@ -29,14 +29,17 @@
     }
   }
 
-  var sleepSort = function sleepSort (array, cb) {
-    var negative = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : []
-    var positive = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : []
-    var max = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : Math.max.apply(Math, _toConsumableArray(array.map(function (n) {
+  var sleepSort = function sleepSort () {
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var cb = arguments[1]
+
+    if (array === null) return null
+    var negative = []
+    var positive = []
+    var max = Math.max.apply(Math, _toConsumableArray(array.map(function (n) {
       return Math.abs(n)
     })))
-    var min = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : Math.min.apply(Math, _toConsumableArray(array))
-
+    var min = Math.min.apply(Math, _toConsumableArray(array))
     for (var i = 0; i < array.length; i++) {
       setTimeout(wake(array[i], max, min, array.length, negative, positive, cb), Math.abs(array[i]) * 3)
     }

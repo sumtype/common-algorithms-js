@@ -16,4 +16,7 @@ describe('Merge Sort ES5 Algorithm: mergeSort(input)', function () {
     expect((0, _es.mergeSort)([5, 8, 6, 7, 4, 1, 2, 3]).toString()).to.eql([1, 2, 3, 4, 5, 6, 7, 8].toString())
     expect((0, _es.mergeSort)([1, 2, 3, 4, 5, 6, 7, 8]).toString()).to.eql([1, 2, 3, 4, 5, 6, 7, 8].toString())
   })
+  it('Should return null if no input array is provided.', function () {
+    expect((0, _es.mergeSort)()).to.eql(null)
+  })
 })

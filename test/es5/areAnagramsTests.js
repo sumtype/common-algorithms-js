@@ -17,6 +17,7 @@ describe('Are Anagrams ES5 Algorithm: areAnagrams(strings)', function () {
     expect((0, _es.areAnagrams)(['cab', 'bca', 'abc', 'bac', 'cba', 'acb'])).to.eql(true)
     expect((0, _es.areAnagrams)(['cab', 'bca', 'bac', 'cba', 'acd'])).to.eql(false)
     expect((0, _es.areAnagrams)([])).to.eql(false)
+    expect((0, _es.areAnagrams)()).to.eql(false)
     expect((0, _es.areAnagrams)(['cab'])).to.eql(false)
     expect((0, _es.areAnagrams)(['cb', 'bc'])).to.eql(true)
   })

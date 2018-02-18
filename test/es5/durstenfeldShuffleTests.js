@@ -14,4 +14,7 @@ describe('Durstenfeld Shuffle ES5 Algorithm: durstenfeldShuffle(input)', functio
   it('Should return the input array with its indices\' values shuffled.', function () {
     expect((0, _es.durstenfeldShuffle)([10, 9, 8, 6, 3, 15, 168, 186, 298, 2, 4, 4, 26]).toString()).to.not.eql([10, 9, 8, 6, 3, 15, 168, 186, 298, 2, 4, 4, 26].toString())
   })
+  it('Should return null when no input is provided.', function () {
+    expect((0, _es.durstenfeldShuffle)()).to.eql(null)
+  })
 })

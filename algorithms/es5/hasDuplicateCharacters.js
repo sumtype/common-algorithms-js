@@ -17,8 +17,8 @@
     value: true
   })
   var hasDuplicateCharacters = function hasDuplicateCharacters () {
-    var s = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    return new Set(s).size !== s.length
+    var s = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    return s === null ? null : new Set(s).size !== s.length
   }
 
   exports.default = hasDuplicateCharacters

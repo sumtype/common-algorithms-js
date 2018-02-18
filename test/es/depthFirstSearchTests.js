@@ -17,4 +17,7 @@ describe('Depth First Search Algorithm: depthFirstSearch(input)', () => {
   it('Should return false when given a disconncted graph\'s adjacency matrix.', () => {
     expect(depthFirstSearch([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1], [1, 0, 1, 0]])).to.eql(false)
   })
+  it('Should return null when no input is provided.', () => {
+    expect(depthFirstSearch()).to.eql(null)
+  })
 })

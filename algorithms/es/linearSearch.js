@@ -1,10 +1,11 @@
 /*
-  A JavaScript module which performs a linear search for a given value inside an input array.  If the specified value is found, the index of the element in the array with that value is returned.  If the specified value is not found in the array -1 is returned.
+  A JavaScript module which performs a linear search for a given value inside an input array.  If the specified value is found, the index of the element in the array with that value is returned.  If the specified value is not found in the array null is returned.
 */
 
 'use strict'
 
-const linearSearch = (array, value, output = -1) => {
+const linearSearch = (array, value) => {
+  let output = null
   if (typeof value === 'object') {
     value = JSON.stringify(value)
     for (let i = 0; i < array.length; i++) if (typeof array[i] === 'object') array[i] = JSON.stringify(array[i])

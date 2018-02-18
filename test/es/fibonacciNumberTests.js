@@ -22,5 +22,9 @@ describe('Fibonacci Number Algorithm: fibonacciNumber(number)', () => {
     expect(fibonacciNumber(8)).to.eql(21)
     expect(fibonacciNumber(9)).to.eql(34)
     expect(fibonacciNumber(10)).to.eql(55)
+    expect(fibonacciNumber()).to.eql(0)
+  })
+  it('Should return null if the input is a negative integer.', () => {
+    expect(fibonacciNumber(-1)).to.eql(null)
   })
 })

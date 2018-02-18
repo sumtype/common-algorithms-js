@@ -17,10 +17,11 @@
     value: true
   })
   var sorensenDiceCoefficient = function sorensenDiceCoefficient () {
-    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
-    var intersection = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0
+    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
 
+    if (s1 === null || s2 === null) return null
+    var intersection = 0
     if (s1.length < 1 || s2.length < 1) return 0
     for (var i = 0; i < s1.length - 1; i++) {
       for (var j = 0; j < s2.length - 1; j++) {

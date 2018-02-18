@@ -6,7 +6,8 @@
 
 let input = null
 
-const mergeSort = (a = []) => {
+const mergeSort = (a = null) => {
+  if (a === null) return null
   input = a
   return partition(0, input.length - 1)
 }
@@ -21,7 +22,11 @@ const partition = (low, high) => {
   return input
 }
 
-const merge = (low, mid, high, index = low, lowIndex = low, midIndex = mid + 1, holder = []) => {
+const merge = (low, mid, high) => {
+  let index = low
+  let lowIndex = low
+  let midIndex = mid + 1
+  let holder = []
   while (lowIndex <= mid && midIndex <= high) {
     if (input[lowIndex] <= input[midIndex]) {
       holder[index] = input[lowIndex]

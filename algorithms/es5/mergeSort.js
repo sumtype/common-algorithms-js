@@ -19,8 +19,9 @@
   var input = null
 
   var mergeSort = function mergeSort () {
-    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
+    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (a === null) return null
     input = a
     return partition(0, input.length - 1)
   }
@@ -36,11 +37,10 @@
   }
 
   var merge = function merge (low, mid, high) {
-    var index = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : low
-    var lowIndex = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : low
-    var midIndex = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : mid + 1
-    var holder = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : []
-
+    var index = low
+    var lowIndex = low
+    var midIndex = mid + 1
+    var holder = []
     while (lowIndex <= mid && midIndex <= high) {
       if (input[lowIndex] <= input[midIndex]) {
         holder[index] = input[lowIndex]

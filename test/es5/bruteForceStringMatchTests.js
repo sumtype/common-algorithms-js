@@ -14,10 +14,16 @@ describe('Brute Force String Match ES5 Algorithm: bruteForceStringMatch(input, p
   it('Should return the proper index value of the pattern in the input string when it exists in the input string.', function () {
     expect((0, _es.bruteForceStringMatch)('test', 'est')).to.eql(1)
   })
-  it('Should return -1 when the given pattern does not exist inside the input string.', function () {
-    expect((0, _es.bruteForceStringMatch)('test', 'xyz')).to.eql(-1)
+  it('Should return null when the given pattern does not exist inside the input string.', function () {
+    expect((0, _es.bruteForceStringMatch)('test', 'xyz')).to.eql(null)
   })
-  it('Should return -1 when the given pattern is longer than the input string.', function () {
-    expect((0, _es.bruteForceStringMatch)('test', 'xyzsda')).to.eql(-1)
+  it('Should return null when the given pattern is longer than the input string.', function () {
+    expect((0, _es.bruteForceStringMatch)('test', 'xyzsda')).to.eql(null)
+  })
+  it('Should return null when there is no input pattern.', function () {
+    expect((0, _es.bruteForceStringMatch)('test')).to.eql(null)
+  })
+  it('Should return null when there is no input string or pattern.', function () {
+    expect((0, _es.bruteForceStringMatch)()).to.eql(null)
   })
 })

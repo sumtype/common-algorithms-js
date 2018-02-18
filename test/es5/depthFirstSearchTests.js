@@ -18,4 +18,7 @@ describe('Depth First Search ES5 Algorithm: depthFirstSearch(input)', function (
   it('Should return false when given a disconncted graph\'s adjacency matrix.', function () {
     expect((0, _es.depthFirstSearch)([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 0, 1], [1, 0, 1, 0]])).to.eql(false)
   })
+  it('Should return null when no input is provided.', function () {
+    expect((0, _es.depthFirstSearch)()).to.eql(null)
+  })
 })

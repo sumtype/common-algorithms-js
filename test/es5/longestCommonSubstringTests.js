@@ -15,7 +15,11 @@ describe('Longest Common Substring ES5 Algorithm: longestCommonSubstring(input1,
     expect((0, _es.longestCommonSubstring)('test', 'est')).to.eql('est')
     expect((0, _es.longestCommonSubstring)('tes', 'est')).to.eql('es')
   })
-  it('Should return -1 when there are no common substrings in the input strings.', function () {
-    expect((0, _es.longestCommonSubstring)('test', 'xyz')).to.eql(-1)
+  it('Should return null when there are no common substrings in the input strings.', function () {
+    expect((0, _es.longestCommonSubstring)('test', 'xyz')).to.eql(null)
+  })
+  it('Should return null when either input string is unspecified.', function () {
+    expect((0, _es.longestCommonSubstring)('test')).to.eql(null)
+    expect((0, _es.longestCommonSubstring)()).to.eql(null)
   })
 })

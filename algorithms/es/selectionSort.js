@@ -4,7 +4,8 @@
 
 'use strict'
 
-const selectionSort = (array = []) => {
+const selectionSort = (array = null) => {
+  if (array === null) return null
   for (let i = 0, min = i; i < array.length; i++, min = i) {
     for (let j = i; j < array.length; j++) if (array[j] < array[min]) min = j
     let swap = array[i]

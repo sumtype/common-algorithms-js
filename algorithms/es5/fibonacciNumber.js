@@ -18,7 +18,7 @@
   })
   var fibonacciNumber = function fibonacciNumber () {
     var n = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0
-    return n < 0 ? false : Math.floor(Math.pow((1 + Math.sqrt(5)) / 2, n) / Math.sqrt(5) + 0.5)
+    return n < 0 ? null : Math.floor(Math.pow((1 + Math.sqrt(5)) / 2, n) / Math.sqrt(5) + 0.5)
   }
 
   exports.default = fibonacciNumber

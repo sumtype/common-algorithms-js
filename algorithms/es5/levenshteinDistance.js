@@ -17,12 +17,13 @@
     value: true
   })
   var levenshteinDistance = function levenshteinDistance () {
-    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ''
-    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
-    var matrix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : []
+    var s1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var s2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
 
-    if (!s1.length) return s2.length
-    if (!s2.length) return s1.length
+    if (s1 === null || s2 === null) return null
+    if (s1.length === 0) return s2.length
+    if (s2.length === 0) return s1.length
+    var matrix = []
     for (var i = 0; i <= s2.length; i++) {
       matrix[i] = [i]
     } for (var _i = 0; _i <= s1.length; _i++) {

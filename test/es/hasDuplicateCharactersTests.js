@@ -17,4 +17,7 @@ describe('Has Duplicate Characters Algorithm: hasDuplicateCharacters(string)', (
     expect(hasDuplicateCharacters('hello')).to.eql(true)
     expect(hasDuplicateCharacters('motto')).to.eql(true)
   })
+  it('Should return null when no input is provided.', () => {
+    expect(hasDuplicateCharacters()).to.eql(null)
+  })
 })

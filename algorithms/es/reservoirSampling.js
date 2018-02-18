@@ -4,8 +4,9 @@
 
 'use strict'
 
-const reservoirSampling = (array = [], size = 0, output = array.slice(0, size)) => {
-  if (!array.length || size === 0) return []
+const reservoirSampling = (array = null, size = null) => {
+  if (array === null || size === null) return null
+  let output = array.slice(0, size)
   for (let i = size, j = Math.floor(Math.random() * (i - 2)) + 1; i < array.length; i++, j = Math.floor(Math.random() * (i - 2)) + 1) if (j <= size) output[j] = array[i]
   return output
 }

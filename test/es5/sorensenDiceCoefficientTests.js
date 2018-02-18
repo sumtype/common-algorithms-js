@@ -18,4 +18,8 @@ describe('Sorensen-Dice Coefficient ES5 Algorithm: sorensenDiceCoefficient(input
     expect((0, _es.sorensenDiceCoefficient)('text', 'text')).to.eql(1)
     expect((0, _es.sorensenDiceCoefficient)('text', 'rext')).to.eql(0.6666666666666666)
   })
+  it('Should return null if either input string is unspecified.', function () {
+    expect((0, _es.sorensenDiceCoefficient)('text')).to.eql(null)
+    expect((0, _es.sorensenDiceCoefficient)()).to.eql(null)
+  })
 })

@@ -19,7 +19,7 @@ describe('Linear Search Algorithm: linearSearch(input, value)', () => {
     expect(linearSearch([10, undefined], undefined)).to.eql(1)
     expect(linearSearch([10, function () {}], function () {})).to.eql(1)
   })
-  it('Should return -1 when the given value does not exist inside an element of the input array.', () => {
-    expect(linearSearch([10, 9], 8)).to.eql(-1)
+  it('Should return null when the given value does not exist inside an element of the input array.', () => {
+    expect(linearSearch([10, 9], 8)).to.eql(null)
   })
 })

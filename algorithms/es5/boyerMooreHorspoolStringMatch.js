@@ -21,7 +21,7 @@
     var pattern = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ''
     var alphabetSize = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 256
 
-    if (pattern.length > input.length || pattern.length === 0) return -1
+    if (pattern.length > input.length || pattern.length === 0) return null
     var skip = new Array(alphabetSize).fill(pattern.length)
     for (var i = 0; i < pattern.length - 1; i++) {
       skip[pattern.charCodeAt(i)] = pattern.length - i - 1
@@ -36,7 +36,7 @@
       if (j === -1) return i + 1
       k += skip[input.charCodeAt(k)]
     }
-    return -1
+    return null
   }
 
   exports.default = boyerMooreHorspoolStringMatch

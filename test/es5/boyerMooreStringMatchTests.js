@@ -16,10 +16,12 @@ describe('Boyer-Moore String Match ES5 Algorithm: boyerMooreStringMatch(input, p
     expect((0, _es.boyerMooreStringMatch)('test', 'est')).to.eql(1)
     expect((0, _es.boyerMooreStringMatch)('teststst', 'st')).to.eql(2)
   })
-  it('Should return -1 when the given pattern does not exist inside the input string.', function () {
-    expect((0, _es.boyerMooreStringMatch)('test', 'xyz')).to.eql(-1)
+  it('Should return null when the given pattern does not exist inside the input string.', function () {
+    expect((0, _es.boyerMooreStringMatch)('test', 'xyz')).to.eql(null)
+    expect((0, _es.boyerMooreStringMatch)('test')).to.eql(null)
+    expect((0, _es.boyerMooreStringMatch)()).to.eql(null)
   })
-  it('Should return -1 when the given pattern is longer than the input string.', function () {
-    expect((0, _es.boyerMooreStringMatch)('test', 'xyzsda')).to.eql(-1)
+  it('Should return null when the given pattern is longer than the input string.', function () {
+    expect((0, _es.boyerMooreStringMatch)('test', 'xyzsda')).to.eql(null)
   })
 })

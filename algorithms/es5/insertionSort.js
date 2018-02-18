@@ -17,8 +17,9 @@
     value: true
   })
   var insertionSort = function insertionSort () {
-    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
+    var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (array === null) return null
     for (var i = 0, index = i; i < array.length; i++, index = i) {
       while (index > 0 && array[index] < array[index - 1]) {
         var swap = array[index]

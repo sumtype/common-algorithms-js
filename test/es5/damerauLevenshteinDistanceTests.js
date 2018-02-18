@@ -16,5 +16,8 @@ describe('Damerau-Levenshtein Distance ES5 Algorithm: damerauLevenshteinDistance
     expect((0, _es.damerauLevenshteinDistance)('tex', 'esr')).to.eql(3)
     expect((0, _es.damerauLevenshteinDistance)('text', 'rext')).to.eql(1)
     expect((0, _es.damerauLevenshteinDistance)('ca', 'abc')).to.eql(2)
+    expect((0, _es.damerauLevenshteinDistance)('', 'abc')).to.eql(3)
+    expect((0, _es.damerauLevenshteinDistance)('')).to.eql(0)
+    expect((0, _es.damerauLevenshteinDistance)()).to.eql(0)
   })
 })
