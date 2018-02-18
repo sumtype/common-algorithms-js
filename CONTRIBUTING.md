@@ -18,7 +18,7 @@ There are a few steps to adding an algorithm to the repository.  Please remember
 
 6) If you didn't update the README.md files inside subfolders in the [locales directory](https://github.com/sumtype/common-algorithms-js/tree/master/locales), create an issue that specifies locale translations for your new algorithm need to be added.
 
-7) Run `yarn test` or `npm test` to generate the ES5 algorithm versions, updated es5.js file, ES5 test files, find and fix any JavaScript Standard Styling errors, and see your test's coverage stats.  Once you're tests are passing and you've gotten good coverage on your ES algorithm version (>95%, ideally 100%) you're ready to make your commit and pull request.  High test coverage on the ES5 algorithm may not be possible given the testing environment and changes made during the transpiling process.
+7) Run `yarn test` or `npm test` to generate the ES5 algorithm versions, updated es5.js file, ES5 test files.  Find and fix any JavaScript Standard Styling errors (if there aren't any the test won't break and will continue to run the Mocha/Chai test cases).  Review your test's coverage stats.  Once you're tests are passing and you've gotten good coverage on your ES algorithm version (>95%, ideally 100%) you're ready to make your commit and pull request.  High test coverage on the ES5 algorithm may not be possible given the testing environment and changes made during the transpiling process.
 
 7) Create a pull request from your fork to the master branch following the [pull request template](https://github.com/sumtype/common-algorithms-js/blob/master/PULL_REQUEST_TEMPLATE.md) guidelines.
 
