@@ -17,5 +17,7 @@ describe('Are Palindromes ES5 Algorithm: arePalindromes(strings)', function () {
     expect((0, _es.arePalindromes)(['cabac'])).to.eql(true)
     expect((0, _es.arePalindromes)(['cabac', 'babab', 'darad'])).to.eql(true)
     expect((0, _es.arePalindromes)(['cabac', 'babab', 'dara'])).to.eql(false)
+    expect((0, _es.arePalindromes)([])).to.eql(false)
+    expect((0, _es.arePalindromes)()).to.eql(false)
   })
 })
