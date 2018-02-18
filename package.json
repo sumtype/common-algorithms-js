@@ -1,11 +1,12 @@
 {
   "name": "common-algorithms-js",
-  "version": "1.40.4",
+  "version": "2.0.0",
   "description": "Commonly used algorithms implemented in JavaScript.",
-  "main": "index.js",
+  "main": "./es6.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "local-test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
+    "compile-es5": "node_modules/.bin/shx rm -rf ./algorithms/es5 && node_modules/.bin/shx rm -rf ./test/es5 && node_modules/.bin/shx rm -f ./es5.js && node_modules/.bin/babel ./es6.js -o ./es5.js --plugins=babel-plugin-transform-es2015-modules-umd --no-comments && node_modules/.bin/babel ./algorithms/es -d ./algorithms/es5 --plugins=babel-plugin-transform-es2015-modules-umd --no-comments && node_modules/.bin/babel ./test/es -d ./test/es5 --no-comments && node_modules/.bin/replace '/es/' '/es5/' ./es5.js -q && node_modules/.bin/replace 'es6' 'algorithms' ./es5.js -q && node_modules/.bin/replace 'es6' 'es5' ./test/es5 -r -q && node_modules/.bin/replace 'Algorithm:' 'ES5 Algorithm:' ./test/es5 -r -q && node_modules/.bin/standard --fix --global self --global define --global it --global describe",
+    "coverage": "node_modules/.bin/nyc report --reporter=text-lcov | node_modules/.bin/coveralls",
+    "test": "yarn compile-es5 && node_modules/.bin/nyc --require babel-register node_modules/.bin/_mocha ./test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -32,10 +33,16 @@
   },
   "homepage": "https://github.com/sumtype/common-algorithms-js#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
-    "coveralls": "^2.13.1",
-    "istanbul": "^0.4.5",
+    "coveralls": "^3.0.0",
     "mocha": "^2.4.5",
-    "mocha-lcov-reporter": "^1.3.0"
+    "nyc": "^11.4.1",
+    "replace": "^0.3.0",
+    "shx": "^0.2.2",
+    "standard": "^10.0.3"
   }
 }
