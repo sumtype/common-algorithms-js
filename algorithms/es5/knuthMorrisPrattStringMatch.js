@@ -16,37 +16,24 @@
   Object.defineProperty(exports, '__esModule', {
     value: true
   })
-  var input = null
-  var pattern = null
-  var longestSuffixPrefix = null
-
   var knuthMorrisPrattStringMatch = function knuthMorrisPrattStringMatch () {
-    var userInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
-    var stringPattern = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
+    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
+    var pattern = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null
 
-    if (userInput === null || stringPattern === null) return null
-    input = userInput
-    pattern = stringPattern
-    if (pattern.length > input.length || pattern.length === 0) return null
-    longestSuffixPrefix = [0]
-    for (var i = 1, j = updateLongestSuffixPrefix(longestSuffixPrefix[i - 1], i); i < pattern.length; i++, j = updateLongestSuffixPrefix(longestSuffixPrefix[i - 1], i)) {
-      longestSuffixPrefix.push(j)
-    } for (var _i = 0, _j = setLongestSuffixPrefix(0, _i); _i < input.length; _i++, _j = setLongestSuffixPrefix(_j, _i)) {
-      if (input.charAt(_i) === pattern.charAt(_j++) && _j === pattern.length) return _i - (_j - 1)
-    } return null
-  }
-
-  var updateLongestSuffixPrefix = function updateLongestSuffixPrefix (j, i) {
-    while (j > 0 && pattern.charAt(i) !== pattern.charAt(j)) {
-      j = longestSuffixPrefix[j - 1]
-    } if (pattern.charAt(i) === pattern.charAt(j)) j++
-    return j
-  }
-
-  var setLongestSuffixPrefix = function setLongestSuffixPrefix (j, i) {
-    while (j > 0 && input.charAt(i) !== pattern.charAt(j)) {
-      j = longestSuffixPrefix[j - 1]
-    } return j
+    if (input === null || input.length === 0 || pattern === null || pattern.length === 0) return null
+    var lsp = [0]
+    for (var i = 1, j = lsp[i - 1]; i < pattern.length; i++, j = lsp[i - 1]) {
+      while (j > 0 && pattern.charAt(i) !== pattern.charAt(j)) {
+        j = lsp[j - 1]
+      } if (pattern.charAt(i) === pattern.charAt(j)) j++
+      lsp.push(j)
+    }
+    for (var _i = 0, _j = 0; _i < input.length; _i++) {
+      while (_j > 0 && input.charAt(_i) !== pattern.charAt(_j)) {
+        _j = lsp[_j - 1]
+      } if (input.charAt(_i) === pattern.charAt(_j) && ++_j === pattern.length) return _i - (_j - 1)
+    }
+    return null
   }
 
   exports.default = knuthMorrisPrattStringMatch

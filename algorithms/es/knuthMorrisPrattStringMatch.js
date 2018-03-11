@@ -7,30 +7,19 @@
 
 'use strict'
 
-let input = null
-let pattern = null
-let longestSuffixPrefix = null
-
-const knuthMorrisPrattStringMatch = (userInput = null, stringPattern = null) => {
-  if (userInput === null || stringPattern === null) return null
-  input = userInput
-  pattern = stringPattern
-  if (pattern.length > input.length || pattern.length === 0) return null
-  longestSuffixPrefix = [0]
-  for (let i = 1, j = updateLongestSuffixPrefix(longestSuffixPrefix[i - 1], i); i < pattern.length; i++, j = updateLongestSuffixPrefix(longestSuffixPrefix[i - 1], i)) longestSuffixPrefix.push(j)
-  for (let i = 0, j = setLongestSuffixPrefix(0, i); i < input.length; i++, j = setLongestSuffixPrefix(j, i)) if (input.charAt(i) === pattern.charAt(j++) && j === pattern.length) return i - (j - 1)
+const knuthMorrisPrattStringMatch = (input = null, pattern = null) => {
+  if (input === null || input.length === 0 || pattern === null || pattern.length === 0) return null
+  let lsp = [0]
+  for (let i = 1, j = lsp[i - 1]; i < pattern.length; i++, j = lsp[i - 1]) {
+    while (j > 0 && pattern.charAt(i) !== pattern.charAt(j)) j = lsp[j - 1]
+    if (pattern.charAt(i) === pattern.charAt(j)) j++
+    lsp.push(j)
+  }
+  for (let i = 0, j = 0; i < input.length; i++) {
+    while (j > 0 && input.charAt(i) !== pattern.charAt(j)) j = lsp[j - 1]
+    if (input.charAt(i) === pattern.charAt(j) && ++j === pattern.length) return i - (j - 1)
+  }
   return null
-}
-
-const updateLongestSuffixPrefix = (j, i) => {
-  while (j > 0 && pattern.charAt(i) !== pattern.charAt(j)) j = longestSuffixPrefix[j - 1]
-  if (pattern.charAt(i) === pattern.charAt(j)) j++
-  return j
-}
-
-const setLongestSuffixPrefix = (j, i) => {
-  while (j > 0 && input.charAt(i) !== pattern.charAt(j)) j = longestSuffixPrefix[j - 1]
-  return j
 }
 
 export default knuthMorrisPrattStringMatch
