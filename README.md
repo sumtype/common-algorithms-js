@@ -40,6 +40,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 * [Is Prime](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/isPrime.js)
 * [Power Set](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/powerSet.js)
 * [Prime Factors](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/primeFactors.js)
+* [Sieve of Atkin](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sieveOfAtkin.js)
 * [Sieve of Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sieveOfEratosthenes.js)
 
 ### String

@@ -56,6 +56,7 @@ Comúnmente algoritmos implementados en JavaScript con [Mocha](https://mochajs.o
 
 * [Fibonacci Número](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/fibonacciNumber.js)
 * [Es Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/isPrime.js)
+* [Tamiz de Atkin](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sieveOfAtkin.js)
 * [Tamiz de Eratosthenes](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/sieveOfEratosthenes.js)
 * [Factores Primo](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/primeFactors.js)
 * [Set de Poder](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/powerSet.js)
