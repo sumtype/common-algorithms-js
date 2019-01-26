@@ -33,6 +33,7 @@ Common algorithms implemented in JavaScript with [Mocha](https://mochajs.org/)/[
 
 * [Breadth First Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/breadthFirstSearch.js)
 * [Depth First Search](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/depthFirstSearch.js)
+* [Kahn's Topological sorting](https://github.com/sumtype/common-algorithms-js/blob/master/algorithms/es/kahnTopologicalSort.js)
 
 ### Math
 

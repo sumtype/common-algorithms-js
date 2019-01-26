@@ -30,7 +30,7 @@ import rayCasting from './algorithms/es/rayCasting'
 // Graph Algorithms
 import breadthFirstSearch from './algorithms/es/breadthFirstSearch'
 import depthFirstSearch from './algorithms/es/depthFirstSearch'
-
+import kahnTopologicalSort from './algorithms/es/kahnTopologicalSort'
 // Math Algorithms
 import fibonacciNumber from './algorithms/es/fibonacciNumber'
 import isPrime from './algorithms/es/isPrime'
@@ -59,7 +59,7 @@ import sorensenDiceCoefficient from './algorithms/es/sorensenDiceCoefficient'
 // Algorithm Categories
 const array = { binarySearch, bubbleSort, bucketSort, cocktailSort, countingSort, durstenfeldShuffle, gnomeSort, insertionSort, linearSearch, mergeSort, quickSort, radixSort, reservoirSampling, sattoloCycle, selectionSort, shellSort, sleepSort }
 const geometry = { bezierCurve, rayCasting }
-const graph = { breadthFirstSearch, depthFirstSearch }
+const graph = { breadthFirstSearch, depthFirstSearch, kahnTopologicalSort }
 const math = { fibonacciNumber, isPrime, powerSet, primeFactors, sieveOfAtkin, sieveOfEratosthenes }
 const string = { areAnagrams, arePalindromes, boyerMooreStringMatch, boyerMooreHorspoolStringMatch, bruteForceStringMatch, damerauLevenshteinDistance, hammingDistance, hasDuplicateCharacters, knuthMorrisPrattStringMatch, levenshteinDistance, longestCommonSubsequence, longestCommonSubstring, matchingDelimiters, rabinKarpStringMatch, sorensenDiceCoefficient }
 
@@ -68,7 +68,7 @@ export default { array, geometry, graph, math, string }
 export {
   array, binarySearch, bubbleSort, bucketSort, cocktailSort, countingSort, durstenfeldShuffle, gnomeSort, insertionSort, linearSearch, mergeSort, quickSort, radixSort, reservoirSampling, sattoloCycle, selectionSort, shellSort, sleepSort,
   geometry, bezierCurve, rayCasting,
-  graph, breadthFirstSearch, depthFirstSearch,
+  graph, breadthFirstSearch, depthFirstSearch, kahnTopologicalSort,
   math, fibonacciNumber, isPrime, powerSet, primeFactors, sieveOfAtkin, sieveOfEratosthenes,
   string, areAnagrams, arePalindromes, boyerMooreStringMatch, boyerMooreHorspoolStringMatch, bruteForceStringMatch, damerauLevenshteinDistance, hammingDistance, hasDuplicateCharacters, knuthMorrisPrattStringMatch, levenshteinDistance, longestCommonSubsequence, longestCommonSubstring, matchingDelimiters, rabinKarpStringMatch, sorensenDiceCoefficient
 }
