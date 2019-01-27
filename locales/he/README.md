@@ -1,4 +1,4 @@
-<section dir="rtl" lang="he">
+<html dir="rtl">
 
 # אלגוריתמים נפוצים ב- JavaScript
 
@@ -6,4 +6,4 @@
 
 אלגוריתמים נפוצים מיושמים ב- JavaScript עם בדיקות [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/). משתמש [Babel](https://babeljs.io/) ו- [UMD](https://github.com/umdjs/umd) כדי להעביר מודולי אלגוריתם מ- ES6 + ל- ES5. דוחות כיסוי הבדיקות מסופקים על ידי [nyc](https://github.com/istanbuljs/nyc) ומוצמדים אל [Coveralls](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master). Coverals מדווח על כיסוי עבור אלגוריתמים של ES6+ (אם כי הן ES6+ והן אלגוריתמים ES5 transpiled נבדקים על ידי [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js). כל קוד JavaScript עוקב אחר הנחיות [JavaScript Standard Style](https://standardjs.com/). תרגומי README ניתנים בספריה [מקומות](https://github.com/sumtype/common-algorithms-js/tree/master/locales) ותורגמו באמצעות Google Translate. כרגע [ספרדית](https://github.com/sumtype/common-algorithms-js/tree/master/locales/es) זמין. [תרומות](https://github.com/sumtype/common-algorithms-js/blob/master/CONTRIBUTING.md) יתקבלו בברכה! בצע את ההנחיות.
 
-</section>
+</html>
