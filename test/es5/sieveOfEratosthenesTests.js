@@ -4,14 +4,14 @@ var _chai = require('chai')
 
 var _chai2 = _interopRequireDefault(_chai)
 
-var _es = require('../../es5')
+var _es = require('../../es')
 
 function _interopRequireDefault (obj) { return obj && obj.__esModule ? obj : { default: obj } }
 
 var expect = _chai2.default.expect
 
-describe('Sieve of Eratosthenes ES5 Algorithm: sieveOfEratosthenes(n)', function () {
-  it('Should return the primes up to the specified integer input.', function () {
+describe('Sieve of Eratosthenes Algorithm: sieveOfEratosthenes(n)', function () {
+  it('Should return the primes up to the specified integer input', function () {
     expect((0, _es.sieveOfEratosthenes)(0).toString()).to.eql([].toString())
     expect((0, _es.sieveOfEratosthenes)(1).toString()).to.eql([].toString())
     expect((0, _es.sieveOfEratosthenes)(2).toString()).to.eql([2].toString())

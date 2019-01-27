@@ -1,3 +1,7 @@
+/*
+  A JavaScript module which performs a topological sort on an input array of edges using Kahn's algorithm.
+*/
+
 'use strict'
 
 const kahnTopologicalSort = edges => {
@@ -22,20 +26,15 @@ const kahnTopologicalSort = edges => {
   const visit = (idstr, ancestors) => {
     let node = nodes[idstr]
     let id = node.id
-    if (visited[idstr]) return
+    if (visited[idstr]) return null
     if (!Array.isArray(ancestors)) ancestors = []
     ancestors.push(id)
     visited[idstr] = true
     node.afters.forEach(afterID => {
       if (ancestors.indexOf(afterID) >= 0) {
-        throw new Error('closed chain : ' + afterID + ' is in ' + id)
+        throw new Error(`Edges are not part of a directed acyclic graph: ${afterID} is in ${id}.`)
       }
-      visit(
-        afterID.toString(),
-        ancestors.map(v => {
-          return v
-        })
-      )
+      visit(afterID.toString(), ancestors.map(v => v))
     })
     sorted.unshift(id)
   }
@@ -44,4 +43,5 @@ const kahnTopologicalSort = edges => {
 
   return sorted
 }
+
 export default kahnTopologicalSort

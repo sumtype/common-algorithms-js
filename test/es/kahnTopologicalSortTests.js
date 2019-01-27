@@ -9,28 +9,16 @@ import { kahnTopologicalSort } from '../../es'
 const expect = chai.expect
 
 // Test
-describe('Kahn Topological Sort Algorithm: KahnTopologicalSort(dependenciesArray)', () => {
-  it('Should return an array of elements been sorted based on their dependencies', done => {
-    const input = [
-      ['A', 'B'],
-      ['A', 'C'],
-      ['B', 'C'],
-      ['F', 'D'],
-      ['D', 'E'],
-      ['C', 'E']
-    ]
-    const output = ['F', 'D', 'A', 'B', 'C', 'E']
-    const result = kahnTopologicalSort(input)
-    expect(output.toString()).to.eql(result.toString())
-    done()
+describe('Kahn Topological Sort Algorithm: KahnTopologicalSort(edges)', () => {
+  it(`Should return a valid topological sorting of the input edges' graph's nodes.`, () => {
+    expect(kahnTopologicalSort([['A', 'B'], ['A', 'C'], ['B', 'C'], ['F', 'D'], ['D', 'E'], ['C', 'E']])).to.deep.equal(['F', 'D', 'A', 'B', 'C', 'E'])
   })
 
-  it('Shuld throw exeption in dependencies contains cycle', () => {
-    const input = [['A', 'B'], ['B', 'A'], ['A', 'C']]
-    expect(() => { kahnTopologicalSort(input) }).to.throw(Error)
+  it(`Should throw an exeption if the edges' graph is not a directed acyclic graph.`, () => {
+    expect(() => kahnTopologicalSort([['A', 'B'], ['B', 'A'], ['A', 'C']])).to.throw()
   })
 
-  it('Should return null if the input array is not provided.', () => {
-    expect(kahnTopologicalSort()).to.eql(null)
+  it('Should return null if no edges are provided', () => {
+    expect(kahnTopologicalSort()).to.equal(null)
   })
 })

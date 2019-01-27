@@ -38,13 +38,13 @@
     var visit = function visit (idstr, ancestors) {
       var node = nodes[idstr]
       var id = node.id
-      if (visited[idstr]) return
+      if (visited[idstr]) return null
       if (!Array.isArray(ancestors)) ancestors = []
       ancestors.push(id)
       visited[idstr] = true
       node.afters.forEach(function (afterID) {
         if (ancestors.indexOf(afterID) >= 0) {
-          throw new Error('closed chain : ' + afterID + ' is in ' + id)
+          throw new Error('Edges are not part of a directed acyclic graph: ' + afterID + ' is in ' + id + '.')
         }
         visit(afterID.toString(), ancestors.map(function (v) {
           return v
@@ -57,5 +57,6 @@
 
     return sorted
   }
+
   exports.default = kahnTopologicalSort
 })

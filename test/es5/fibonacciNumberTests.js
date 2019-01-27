@@ -4,14 +4,14 @@ var _chai = require('chai')
 
 var _chai2 = _interopRequireDefault(_chai)
 
-var _es = require('../../es5')
+var _es = require('../../es')
 
 function _interopRequireDefault (obj) { return obj && obj.__esModule ? obj : { default: obj } }
 
 var expect = _chai2.default.expect
 
-describe('Fibonacci Number ES5 Algorithm: fibonacciNumber(number)', function () {
-  it('Should return the correct nth Fibonacci number based on the input integer.', function () {
+describe('Fibonacci Number Algorithm: fibonacciNumber(number)', function () {
+  it('Should return the correct nth Fibonacci number based on the input integer', function () {
     expect((0, _es.fibonacciNumber)(0)).to.eql(0)
     expect((0, _es.fibonacciNumber)(1)).to.eql(1)
     expect((0, _es.fibonacciNumber)(2)).to.eql(1)
@@ -25,7 +25,7 @@ describe('Fibonacci Number ES5 Algorithm: fibonacciNumber(number)', function () 
     expect((0, _es.fibonacciNumber)(10)).to.eql(55)
     expect((0, _es.fibonacciNumber)()).to.eql(0)
   })
-  it('Should return null if the input is a negative integer.', function () {
+  it('Should return null if the input is a negative integer', function () {
     expect((0, _es.fibonacciNumber)(-1)).to.eql(null)
   })
 })

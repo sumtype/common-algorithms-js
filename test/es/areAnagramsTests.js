@@ -10,7 +10,7 @@ const expect = chai.expect
 
 // Test
 describe('Are Anagrams Algorithm: areAnagrams(strings)', () => {
-  it('Should return the correct boolean depending on whether the input array of strings are anagrams of one another.', () => {
+  it('Should return the correct boolean depending on whether the input array of strings are anagrams of one another', () => {
     expect(areAnagrams(['acb', 'bac', 'cab'])).to.eql(true)
     expect(areAnagrams(['ab', 'bac', 'cab'])).to.eql(false)
     expect(areAnagrams(['cab', 'bca', 'abc', 'bac', 'cba', 'acb'])).to.eql(true)

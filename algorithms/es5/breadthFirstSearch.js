@@ -16,13 +16,21 @@
   Object.defineProperty(exports, '__esModule', {
     value: true
   })
-  var queue = []
-  var visited = []
-  var connected = true
-
   var breadthFirstSearch = function breadthFirstSearch () {
-    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : []
+    var input = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null
 
+    if (input === null) return null
+    var queue = []
+    var visited = []
+    var connected = true
+    var search = function search (value, input, f, r) {
+      for (var i = 0; i < input.length; i++) {
+        if (input[value][i] && !visited[i]) queue[++r] = i
+      } if (f <= r) {
+        visited[queue[f]] = 1
+        search(queue[f++], input, f, r)
+      }
+    }
     for (var i = 0; i < input.length; i++) {
       queue[i] = 0
       visited[i] = 0
@@ -31,15 +39,6 @@
     for (var _i = 0; _i < visited.length; _i++) {
       if (!visited[_i]) connected = false
     } return connected
-  }
-
-  var search = function search (value, input, f, r) {
-    for (var i = 0; i < input.length; i++) {
-      if (input[value][i] && !visited[i]) queue[++r] = i
-    } if (f <= r) {
-      visited[queue[f]] = 1
-      search(queue[f++], input, f, r)
-    }
   }
 
   exports.default = breadthFirstSearch

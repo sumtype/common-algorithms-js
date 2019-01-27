@@ -10,7 +10,7 @@ const expect = chai.expect
 
 // Test
 describe('Sieve of Eratosthenes Algorithm: sieveOfEratosthenes(n)', () => {
-  it('Should return the primes up to the specified integer input.', () => {
+  it('Should return the primes up to the specified integer input', () => {
     expect(sieveOfEratosthenes(0).toString()).to.eql(([]).toString())
     expect(sieveOfEratosthenes(1).toString()).to.eql(([]).toString())
     expect(sieveOfEratosthenes(2).toString()).to.eql(([2]).toString())
