@@ -134,7 +134,7 @@ Para ejecutar las pruebas usted mismo, deberá descargar el proyecto e instalar 
 
 `git clone https://github.com/sumtype/common-algorithms-js.git`
 
-(En caso de que aún no haya instalado [Git] (https://git-scm.com/), hágalo siguiendo las instrucciones de instalación [aquí](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), luego ingrese el comando anterior una vez que esté instalado.) Una vez que haya descargado el proyecto, use el siguiente comando para navegar al directorio raíz del proyecto:
+(En caso de que aún no haya instalado [Git](https://git-scm.com/), hágalo siguiendo las instrucciones de instalación [aquí](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), luego ingrese el comando anterior una vez que esté instalado.) Una vez que haya descargado el proyecto, use el siguiente comando para navegar al directorio raíz del proyecto:
 
 `cd common-algorithms-js`
 
