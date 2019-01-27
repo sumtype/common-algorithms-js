@@ -14,7 +14,7 @@
 
 4) הוסף את האלגוריתם החדש שלך אל [README.md](https://github.com/sumtype/common-algorithms-js/blob/master/README.md) בעקבות אותם מוסכמות המשמשות לתיאור אלגוריתמים אחרים. אם יש צורך בקטגוריה חדשה של אלגוריתמים, הוסף אותה בהתאם לאותם מוסכמות כמו אחרים.
 
-5) **אופציונלי **- עדכן את הקבצים README.md בתוך תיקיות המשנה ב [ספריית המקומות](https://github.com/sumtype/common-algorithms-js/tree/master/locales) כדי לכלול את האלגוריתם החדש שלך (מתורגמת כראוי).
+5) אופציונלי - עדכן את הקבצים README.md בתוך תיקיות המשנה ב [ספריית המקומות](https://github.com/sumtype/common-algorithms-js/tree/master/locales) כדי לכלול את האלגוריתם החדש שלך (מתורגמת כראוי).
 
 6) אם לא עדכנת את הקבצים README.md בתוך תיקיות המשנה בספריית [locales](https://github.com/sumtype/common-algorithms-js/tree/master/locales), צור בעיה המציינת תרגום מקומי עבור האלגוריתם החדש שלך צריך להיות הוסיף.
 
