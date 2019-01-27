@@ -1,5 +1,9 @@
-&#x202b;# אלגוריתמים נפוצים ב- JavaScript
+<section dir="rtl">
+
+# אלגוריתמים נפוצים ב- JavaScript
 
 [![Build Status](https://travis-ci.org/sumtype/common-algorithms-js.svg?branch=master)](https://travis-ci.org/sumtype/common-algorithms-js) [![Coverage Status](https://coveralls.io/repos/github/sumtype/common-algorithms-js/badge.svg?branch=master)](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master) [![Known Vulnerabilities](https://snyk.io/test/github/sumtype/common-algorithms-js/badge.svg)](https://snyk.io/test/github/sumtype/common-algorithms-js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![npm](https://img.shields.io/npm/dt/common-algorithms-js.svg)](https://www.npmjs.com/package/common-algorithms-js)
 
 אלגוריתמים נפוצים מיושמים ב- JavaScript עם בדיקות [Mocha](https://mochajs.org/)/[Chai](http://chaijs.com/). משתמש [Babel](https://babeljs.io/) ו- [UMD](https://github.com/umdjs/umd) כדי להעביר מודולי אלגוריתם מ- ES6 + ל- ES5. דוחות כיסוי הבדיקות מסופקים על ידי [nyc](https://github.com/istanbuljs/nyc) ומוצמדים אל [Coveralls](https://coveralls.io/github/sumtype/common-algorithms-js?branch=master). Coverals מדווח על כיסוי עבור אלגוריתמים של ES6+ (אם כי הן ES6+ והן אלגוריתמים ES5 transpiled נבדקים על ידי [Travis-CI](https://travis-ci.org/sumtype/common-algorithms-js). כל קוד JavaScript עוקב אחר הנחיות [JavaScript Standard Style](https://standardjs.com/). תרגומי README ניתנים בספריה [מקומות](https://github.com/sumtype/common-algorithms-js/tree/master/locales) ותורגמו באמצעות Google Translate. כרגע [ספרדית](https://github.com/sumtype/common-algorithms-js/tree/master/locales/es) זמין. [תרומות](https://github.com/sumtype/common-algorithms-js/blob/master/CONTRIBUTING.md) יתקבלו בברכה! בצע את ההנחיות.
+
+</section>
