@@ -1,4 +1,4 @@
-<section dir="rtl">
+<section dir="rtl" lang="he">
 
 # אלגוריתמים נפוצים ב- JavaScript
 
