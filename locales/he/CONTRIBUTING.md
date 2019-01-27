@@ -2,7 +2,7 @@
 
 ברוך הבא! אל תהסס לתרום אלגוריתמים, בעיות, תיקונים ותרגומים.
 
-# # אלגוריתמים
+## אלגוריתמים
 
 יש כמה צעדים להוספת אלגוריתם למאגר. זכור כי כל האלגוריתם של JavaScript ותרומות הבדיקה חייבים לפעול לפי הכללים [JavaScript Standard Style](https://standardjs.com/). ES6 + קוד מוצע יישומים עדיפים עדיפים.
 
@@ -14,7 +14,7 @@
 
 4) הוסף את האלגוריתם החדש שלך אל [README.md](https://github.com/sumtype/common-algorithms-js/blob/master/README.md) בעקבות אותם מוסכמות המשמשות לתיאור אלגוריתמים אחרים. אם יש צורך בקטגוריה חדשה של אלגוריתמים, הוסף אותה בהתאם לאותם מוסכמות כמו אחרים.
 
-5) ** אופציונלי ** - עדכן את הקבצים README.md בתוך תיקיות המשנה ב [ספריית המקומות](https://github.com/sumtype/common-algorithms-js/tree/master/locales) כדי לכלול את האלגוריתם החדש שלך (מתורגמת כראוי).
+5) **אופציונלי **- עדכן את הקבצים README.md בתוך תיקיות המשנה ב [ספריית המקומות](https://github.com/sumtype/common-algorithms-js/tree/master/locales) כדי לכלול את האלגוריתם החדש שלך (מתורגמת כראוי).
 
 6) אם לא עדכנת את הקבצים README.md בתוך תיקיות המשנה בספריית [locales](https://github.com/sumtype/common-algorithms-js/tree/master/locales), צור בעיה המציינת תרגום מקומי עבור האלגוריתם החדש שלך צריך להיות הוסיף.
 
@@ -26,7 +26,7 @@
 
 אנא הקלד בעיות לפי [תבנית הבעיות](https://github.com/sumtype/common-algorithms-js/blob/master/ISSUE_TEMPLATE.md).
 
-# # תיקונים
+## תיקונים
 
 אנא עקוב בקשות למשוך תיקונים בהתאם ל [תבנית בקשת המשיכה](https://github.com/sumtype/common-algorithms-js/blob/master/PULL_REQUEST_TEMPLATE.md).
 
